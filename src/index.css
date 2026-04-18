@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-theme-primary: #2D5A27;
+  --color-theme-accent: #E0A96D;
+  --color-theme-bg: #EDF3ED;
+  --color-theme-text: #1A1A1A;
+  --color-theme-card: #FFFFFF;
+  --color-theme-muted: #666666;
+  --color-theme-border: #D8DFD8;
+  --color-theme-surface: #E8EFE8;
+
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+
+  /* Remapping old palette entirely to sleek theme to minimize component rewrites */
+  --color-mf-purple-900: #1A1A1A;     /* Primary Text & solid dark shapes */
+  --color-mf-purple-800: #666666;     /* Muted variants */
+  --color-mf-green: #2D5A27;          /* Primary Green */
+  --color-mf-green-light: #E8EFE8;    /* Light surface */
+  --color-mf-green-dark: #2D5A27;     /* Background for Hero / Green Blocks */
+  --color-mf-peach: #E0A96D;          /* Accent Gold */
+  --color-mf-peach-light: #eed2b1;    /* Lighter Accent */
+
+  --color-background: #EDF3ED;
+  --color-foreground: #1A1A1A;
+  
+  --shadow-sleek: 0 4px 12px rgba(45, 90, 39, 0.05);
+}
+
+body {
+  background-color: var(--color-theme-bg);
+  color: var(--color-theme-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
