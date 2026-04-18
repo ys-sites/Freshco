@@ -45,11 +45,13 @@ export function AboutSnippet() {
          aria-label="Visit our Instagram Reels"
          className="w-[220px] md:w-[260px] lg:w-[280px] aspect-[9/16] rounded-[24px] overflow-hidden relative shadow-2xl flex-shrink-0 z-10 border-[3px] border-white/20 group block mx-auto md:mx-0 transition-transform duration-300 hover:-translate-y-2 bg-black"
        >
-         <img 
-           src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800&auto=format&fit=crop&h=1400" 
-           alt="Instagram Reel Thumbnail"
-           referrerPolicy="no-referrer"
-           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+         <video
+           src="/ig.mp4"
+           autoPlay
+           loop
+           muted
+           playsInline
+           className="w-full h-full object-cover"
          />
          
          {/* Top and Bottom Dark Gradients for UI readability */}
