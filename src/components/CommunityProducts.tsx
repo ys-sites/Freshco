@@ -13,7 +13,7 @@ export function CommunityProducts() {
       description: isFr 
         ? "Farines, huiles de palme, épices authentiques, plantains et produits essentiels pour la cuisine africaine traditionnelle."
         : "Flours, palm oils, authentic spices, plantains, and essential products for traditional African cooking.",
-      image: "https://images.unsplash.com/photo-1596649298486-13a10faec484?q=80&w=1400&auto=format&fit=crop", // vibrant spices
+      image: "/african-specialties.jpeg",
       tags: isFr ? ["Manioc", "Foufou", "Épices"] : ["Cassava", "Fufu", "Spices"]
     },
     {
@@ -22,7 +22,7 @@ export function CommunityProducts() {
       description: isFr
         ? "Large sélection de riz Basmati, dhal, chutneys, pâtes de curry et douceurs traditionnelles indiennes et pakistanaises."
         : "Vast selection of Basmati rice, dhal, chutneys, curry pastes, and traditional Indian and Pakistani sweets.",
-      image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=1400&auto=format&fit=crop", // indian spices / lentils
+      image: "/south-asian-flavors.jpeg",
       tags: isFr ? ["Riz Basmati", "Ghee", "Lentilles"] : ["Basmati Rice", "Ghee", "Lentils"]
     },
     {
@@ -31,8 +31,17 @@ export function CommunityProducts() {
       description: isFr
         ? "Dattes fraîches, tahini, olives importées, fromages locaux et tout pour vos mezzés et pâtisseries orientales."
         : "Fresh dates, tahini, imported olives, local cheeses, and everything for your mezzes and oriental pastries.",
-      image: "https://images.unsplash.com/photo-1558145783-d922ce01d811?q=80&w=1400&auto=format&fit=crop", // dates, nuts, middle eastern spread
+      image: "/middle-eastern-goods.png",
       tags: isFr ? ["Dattes", "Tahini", "Olives"] : ["Dates", "Tahini", "Olives"]
+    },
+    {
+      id: "halal",
+      title: isFr ? "Boucherie Halal" : "Halal Butcher",
+      description: isFr
+        ? "Gamme complète de viandes de première qualité, certifiées 100% Halal. Des coupes fraîches pour tous vos repas en famille."
+        : "Full range of premium quality meats, certified 100% Halal. Fresh cuts for all your family meals.",
+      image: "/halal.jpg",
+      tags: isFr ? ["Viande", "Certifié", "Frais"] : ["Meat", "Certified", "Fresh"]
     }
   ];
 
@@ -74,7 +83,7 @@ export function CommunityProducts() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
         {communities.map((community, index) => (
           <motion.div
             key={community.id}
