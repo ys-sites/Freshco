@@ -53,7 +53,7 @@ export function AboutSnippet() {
        >
          <video
            ref={videoRef}
-           src="/ig.mp4#t=0.001"
+           src="/video.mp4#t=0.001"
            preload="metadata"
            playsInline
            controls={isPlaying}
@@ -61,7 +61,12 @@ export function AboutSnippet() {
          />
          
          {!isPlaying && (
-           <>
+           <div 
+             className="absolute inset-0 cursor-pointer z-20"
+             onClick={handlePlay}
+             aria-label="Play video"
+             role="button"
+           >
              {/* Top and Bottom Dark Gradients for UI readability */}
              <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/70 pointer-events-none"></div>
 
@@ -73,13 +78,11 @@ export function AboutSnippet() {
              </div>
 
              {/* Animated Play Button */}
-             <button 
-               onClick={handlePlay}
-               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[64px] h-[64px] bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/40 shadow-[0_4px_30px_rgba(0,0,0,0.3)] group-hover:bg-white/30 group-hover:scale-110 transition-all duration-300 cursor-pointer"
-               aria-label="Play video"
+             <div 
+               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[64px] h-[64px] bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/40 shadow-[0_4px_30px_rgba(0,0,0,0.3)] group-hover:bg-white/30 group-hover:scale-110 transition-all duration-300 flex-shrink-0"
              >
                <Play className="w-8 h-8 text-white ml-1 fill-white" />
-             </button>
+             </div>
 
              {/* Bottom Text matching screenshot style */}
              <div className="absolute bottom-6 left-0 right-0 text-center px-4 pointer-events-none">
@@ -87,7 +90,7 @@ export function AboutSnippet() {
                   MÁRCHE FRESHCO
                 </span>
              </div>
-           </>
+           </div>
          )}
        </div>
     </section>
