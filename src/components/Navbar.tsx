@@ -27,7 +27,7 @@ export function Navbar() {
           </a>
         </div>
 
-        <nav className="hidden lg:flex items-center gap-8 text-sm font-semibold uppercase tracking-wide">
+        <nav className="hidden lg:flex items-center gap-4 xl:gap-8 text-[12px] xl:text-sm font-semibold uppercase tracking-wide whitespace-nowrap">
           <a href="#deals" className="text-theme-muted hover:text-theme-primary transition-colors">{lang === 'fr' ? 'Nos Arrivages' : 'Weekly Deals'}</a>
           <a href="#about" className="text-theme-muted hover:text-theme-primary transition-colors">{lang === 'fr' ? 'Notre Mission' : 'Our Mission'}</a>
           <a href="#world" className="text-theme-muted hover:text-theme-primary transition-colors">{lang === 'fr' ? "D'ici et d'ailleurs" : 'World Products'}</a>

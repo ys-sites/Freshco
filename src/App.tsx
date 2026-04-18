@@ -16,6 +16,7 @@ import { StoreInfo } from './components/StoreInfo';
 import { Testimonials } from './components/Testimonials';
 import { NewsletterSignup } from './components/NewsletterSignup';
 import { Footer } from './components/Footer';
+import { Phone } from 'lucide-react';
 
 export default function App() {
   return (
@@ -74,6 +75,15 @@ export default function App() {
       </div>
 
       <Footer />
+
+      {/* Mobile Floating Action Button - Phone */}
+      <a 
+        href="tel:4389697966" 
+        className="md:hidden fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-theme-primary text-white shadow-lg shadow-theme-primary/40 active:scale-95 transition-all"
+        aria-label="Call Store"
+      >
+        <Phone className="h-6 w-6 fill-current" />
+      </a>
     </div>
   );
 }

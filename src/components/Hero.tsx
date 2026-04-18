@@ -21,8 +21,8 @@ export function Hero({ className = '' }: { className?: string }) {
         />
       </div>
       
-      {/* Right side image - flush, visible on md and up with a hard edge */}
-      <div className="hidden md:block absolute right-0 top-0 bottom-0 h-full w-[45%] lg:w-[42%] z-0">
+      {/* Right side image - flush, visible on lg and up with a hard edge */}
+      <div className="hidden lg:block absolute right-0 top-0 bottom-0 h-full w-[42%] z-0">
         <motion.img
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -34,8 +34,8 @@ export function Hero({ className = '' }: { className?: string }) {
         />
       </div>
       
-      {/* Mobile background image */}
-      <div className="md:hidden absolute inset-0 z-0">
+      {/* Mobile and Tablet background image */}
+      <div className="lg:hidden absolute inset-0 z-0">
         <img 
           src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1974&auto=format&fit=crop" 
           alt="Fresh produce and groceries"
