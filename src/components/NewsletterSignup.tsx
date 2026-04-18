@@ -16,7 +16,7 @@ export function NewsletterSignup() {
 
     setStatus('loading');
     try {
-      const response = await fetch('https://services.leadconnectorhq.com/hooks/o7aUwpKbtkP4AOP0pEjC/webhook-trigger/10027693-207d-406c-94a7-bf55a8d3a524', {
+      const response = await fetch('https://services.leadconnectorhq.com/hooks/o7aUwpKbtkP4AOP0pEjC/webhook-trigger/b0e56c9d-f3de-436e-aff0-9055faeb0295', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
