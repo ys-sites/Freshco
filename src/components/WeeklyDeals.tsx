@@ -6,14 +6,14 @@ export function WeeklyDeals() {
   const isFr = lang === 'fr';
 
   const weeklyDeals = [
-    { id: 1, name: isFr ? 'Bananes Plantains' : 'African Plantains', price: '$4.99/lb', src: 'https://images.unsplash.com/photo-1613758339893-bc8e2df8417c?q=80&w=2000&auto=format&fit=crop' },
-    { id: 2, name: isFr ? 'Safran Premium (1g)' : 'Premium Saffron (1g)', price: '$12.99', src: 'https://images.unsplash.com/photo-1596484552834-6a58f850e0a1?q=80&w=2000&auto=format&fit=crop' },
-    { id: 3, name: isFr ? 'Côtes de Bœuf Halal' : 'Halal Beef Ribs', price: '$15.50/lb', src: 'https://images.unsplash.com/photo-1627885481710-8b010c22fa10?q=80&w=2000&auto=format&fit=crop' },
-    { id: 4, name: isFr ? 'Dattes Medjool' : 'Medjool Dates (Box)', price: '$19.99', src: 'https://images.unsplash.com/photo-1596431940984-7a3089d71ae7?q=80&w=2000&auto=format&fit=crop' },
-    { id: 5, name: isFr ? 'Poudre de Curcuma Biologique' : 'Organic Turmeric Powder', price: '$5.49', src: 'https://images.unsplash.com/photo-1615485900898-1e42845c8eb1?q=80&w=2000&auto=format&fit=crop' },
-    { id: 6, name: isFr ? 'Ghee Desi Pur' : 'Pure Desi Ghee', price: '$11.99', src: 'https://images.unsplash.com/photo-1627998692742-99dca8c538cb?q=80&w=2000&auto=format&fit=crop' },
-    { id: 7, name: isFr ? 'Cardamome de Ceylan' : 'Ceylon Cardamom', price: '$8.50', src: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=2000&auto=format&fit=crop' },
-    { id: 8, name: isFr ? 'Feuilles de Thé Noir' : 'Black Chai Leaves', price: '$6.99', src: 'https://images.unsplash.com/photo-1563822249548-9a72b6353cd1?q=80&w=2000&auto=format&fit=crop' },
+    { id: 1, name: isFr ? 'Bananes Plantains' : 'Green Plantains', price: '$4.99/lb', src: '/plantains.jpg' },
+    { id: 2, name: isFr ? 'Feuilles de Thé Noir' : 'Black Tea Leaves', price: '$6.99', src: '/tea.jpg' },
+    { id: 3, name: isFr ? 'Côtes de Bœuf Halal' : 'Halal Beef Ribs', price: '$15.50/lb', src: '/ribs.jpg' },
+    { id: 4, name: isFr ? 'Dattes Medjool' : 'Medjool Dates', price: '$19.99', src: '/dates.jpg' },
+    { id: 5, name: isFr ? 'Cardamome Verte (100g)' : 'Oh Natural Green Cardamom', price: '$8.50', src: '/cardamom.jpg' },
+    { id: 6, name: isFr ? 'Ghee Desi Pur' : 'Pure Desi Ghee', price: '$11.99', src: '/ghee.jpg' },
+    { id: 7, name: isFr ? 'Safran Premium (1g)' : 'Qure Saffron (1g)', price: '$12.99', src: '/saffron.jpg' },
+    { id: 8, name: isFr ? 'Poudre de Curcuma' : 'Organic Turmeric Powder', price: '$5.49', src: '/turmeric.jpg' },
   ];
 
   return (
