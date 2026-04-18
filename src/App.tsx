@@ -43,7 +43,14 @@ export default function App() {
           </div>
 
           <Marquee />
-          
+
+          {/* Priority Sections: Weekly Flyers → Our Mission → World Products */}
+          <div className="flex flex-col gap-4 lg:gap-6 w-full">
+            <WeeklyDeals />
+            <AboutSnippet />
+            <CommunityProducts />
+          </div>
+
           {/* Email Marketing & Categories Grid */}
           <div className="grid grid-cols-1 md:grid-cols-[1fr_300px] lg:grid-cols-[1fr_310px] gap-4 lg:gap-4 md:items-stretch">
             <div className="flex flex-col gap-4 w-full min-w-0 h-full">
@@ -54,12 +61,8 @@ export default function App() {
             </div>
           </div>
 
-          <CommunityProducts />
-
-          {/* Full-width sections below */}
-          <div className="flex flex-col gap-4 lg:gap-6 w-full mt-2 md:mt-0">
-            <WeeklyDeals />
-            <AboutSnippet />
+          {/* Remaining Sections */}
+          <div className="flex flex-col gap-4 lg:gap-6 w-full">
             <Boucherie />
             <Produce />
             <Testimonials />

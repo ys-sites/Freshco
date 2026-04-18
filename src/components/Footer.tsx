@@ -45,8 +45,9 @@ export function Footer() {
           <div className="flex flex-col gap-5">
             <h3 className="text-white font-serif font-bold text-[20px] tracking-wide mb-1">{isFr ? "Explorer" : "Explore"}</h3>
             <ul className="space-y-4">
-              <li><a href="#about" className="text-white/90 hover:text-white text-[15px] transition-colors">{isFr ? "Notre Mission" : "Our Mission"}</a></li>
               <li><a href="#deals" className="text-white/90 hover:text-white text-[15px] transition-colors">{isFr ? "Nos Arrivages" : "Weekly Deals"}</a></li>
+              <li><a href="#about" className="text-white/90 hover:text-white text-[15px] transition-colors">{isFr ? "Notre Mission" : "Our Mission"}</a></li>
+              <li><a href="#world" className="text-white/90 hover:text-white text-[15px] transition-colors">{isFr ? "D'ici et d'ailleurs" : "World Products"}</a></li>
               <li><a href="#halal" className="text-white/90 hover:text-white text-[15px] transition-colors">{isFr ? "Notre Boucherie" : "Our Boucherie"}</a></li>
               <li><a href="#produce" className="text-white/90 hover:text-white text-[15px] transition-colors">{isFr ? "Produits Frais" : "Fresh Produce"}</a></li>
             </ul>

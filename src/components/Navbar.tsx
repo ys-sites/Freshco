@@ -29,10 +29,10 @@ export function Navbar() {
 
         <nav className="hidden lg:flex items-center gap-8 text-sm font-semibold uppercase tracking-wide">
           <a href="#deals" className="text-theme-muted hover:text-theme-primary transition-colors">{lang === 'fr' ? 'Nos Arrivages' : 'Weekly Deals'}</a>
+          <a href="#about" className="text-theme-muted hover:text-theme-primary transition-colors">{lang === 'fr' ? 'Notre Mission' : 'Our Mission'}</a>
+          <a href="#world" className="text-theme-muted hover:text-theme-primary transition-colors">{lang === 'fr' ? "D'ici et d'ailleurs" : 'World Products'}</a>
           <a href="#halal" className="text-theme-muted hover:text-theme-primary transition-colors">{lang === 'fr' ? 'Boucherie' : 'Halal Butcher'}</a>
           <a href="#produce" className="text-theme-muted hover:text-theme-primary transition-colors">{lang === 'fr' ? 'Produits Frais' : 'Fresh Produce'}</a>
-          <a href="#world" className="text-theme-muted hover:text-theme-primary transition-colors">{lang === 'fr' ? "D'ici et d'ailleurs" : 'World Products'}</a>
-          <a href="#about" className="text-theme-muted hover:text-theme-primary transition-colors">{lang === 'fr' ? 'Notre Mission' : 'Our Mission'}</a>
         </nav>
 
         <div className="flex items-center gap-6">
