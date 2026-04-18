@@ -27,7 +27,7 @@ export function Boucherie() {
        
        <div className="w-full md:w-[45%] h-64 md:h-[320px] rounded-[16px] overflow-hidden relative shadow-sm flex-shrink-0 border border-theme-border">
          <img 
-           src="https://images.unsplash.com/photo-1607532941433-304659e8198a?q=80&w=2000&auto=format&fit=crop" 
+           src="/halal.jpg" 
            alt="Our Halal Boucherie"
            referrerPolicy="no-referrer"
            className="w-full h-full object-cover" 

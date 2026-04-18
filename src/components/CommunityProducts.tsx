@@ -33,15 +33,6 @@ export function CommunityProducts() {
         : "Fresh dates, tahini, imported olives, local cheeses, and everything for your mezzes and oriental pastries.",
       image: "/middle-eastern-goods.png",
       tags: isFr ? ["Dattes", "Tahini", "Olives"] : ["Dates", "Tahini", "Olives"]
-    },
-    {
-      id: "halal",
-      title: isFr ? "Boucherie Halal" : "Halal Butcher",
-      description: isFr
-        ? "Gamme complète de viandes de première qualité, certifiées 100% Halal. Des coupes fraîches pour tous vos repas en famille."
-        : "Full range of premium quality meats, certified 100% Halal. Fresh cuts for all your family meals.",
-      image: "/halal.jpg",
-      tags: isFr ? ["Viande", "Certifié", "Frais"] : ["Meat", "Certified", "Fresh"]
     }
   ];
 
@@ -83,7 +74,7 @@ export function CommunityProducts() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
         {communities.map((community, index) => (
           <motion.div
             key={community.id}
