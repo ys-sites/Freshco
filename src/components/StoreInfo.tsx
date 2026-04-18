@@ -48,7 +48,7 @@ export function StoreInfo() {
 
         {/* Instagram */}
         <a href="https://www.instagram.com/marche_freshco/" target="_blank" rel="noopener noreferrer" className="flex gap-2.5 md:gap-3 items-start group cursor-pointer pb-1">
-          <div className="bg-theme-surface text-theme-primary p-2 rounded-[10px] md:rounded-xl group-hover:bg-theme-primary group-hover:text-white transition-colors">
+          <div className="bg-[#E1306C]/10 text-[#E1306C] p-2 rounded-[10px] md:rounded-xl group-hover:bg-gradient-to-tr group-hover:from-[#F56040] group-hover:to-[#833AB4] group-hover:text-white transition-all">
             <Instagram className="w-3.5 h-3.5 md:w-4 md:h-4"/>
           </div>
           <div className="pt-0.5">

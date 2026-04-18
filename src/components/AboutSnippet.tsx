@@ -71,11 +71,9 @@ export function AboutSnippet() {
              {/* Top and Bottom Dark Gradients for UI readability */}
              <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/70 pointer-events-none"></div>
 
-             {/* IG Overlay Ring & Logo */}
-             <div className="absolute top-4 left-4 p-[2px] rounded-full bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] shadow-lg pointer-events-none">
-               <div className="bg-black/80 backdrop-blur-md rounded-full p-2 flex items-center justify-center">
-                 <Instagram className="w-5 h-5 text-white" />
-               </div>
+             {/* IG Overlay Logo */}
+             <div className="absolute top-4 left-4 rounded-full bg-theme-surface text-theme-primary shadow-lg border border-theme-border/50 pointer-events-none p-2.5 flex items-center justify-center">
+               <Instagram className="w-5 h-5" />
              </div>
 
              {/* Animated Play Button */}
