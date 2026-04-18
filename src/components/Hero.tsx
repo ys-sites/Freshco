@@ -34,8 +34,16 @@ export function Hero({ className = '' }: { className?: string }) {
         />
       </div>
       
-      {/* Small gradient just at the bottom for mobile text contrast, if any */}
-      <div className="md:hidden absolute inset-0 bg-gradient-to-t from-theme-primary/80 to-transparent pointer-events-none z-0"></div>
+      {/* Mobile background image */}
+      <div className="md:hidden absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1974&auto=format&fit=crop" 
+          alt="Fresh produce and groceries"
+          className="w-full h-full object-cover opacity-40 mix-blend-luminosity"
+          referrerPolicy="no-referrer"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#122b0f] via-[#122b0f]/80 to-[#2D5A27]/50 pointer-events-none"></div>
+      </div>
       
       <div className="relative z-10 w-full md:w-[65%]">
         <motion.div
