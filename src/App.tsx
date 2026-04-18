@@ -44,6 +44,9 @@ export default function App() {
 
           <Marquee />
 
+          {/* Newsletter — right after the marquee */}
+          <NewsletterSignup />
+
           {/* Priority Sections: Weekly Flyers → Our Mission → World Products */}
           <div className="flex flex-col gap-4 lg:gap-6 w-full">
             <WeeklyDeals />
@@ -51,15 +54,8 @@ export default function App() {
             <CommunityProducts />
           </div>
 
-          {/* Email Marketing & Categories Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_300px] lg:grid-cols-[1fr_310px] gap-4 lg:gap-4 md:items-stretch">
-            <div className="flex flex-col gap-4 w-full min-w-0 h-full">
-              <NewsletterSignup />
-            </div>
-            <div className="flex flex-col gap-4 w-full min-w-0 h-full">
-              <CategoryShowcase />
-            </div>
-          </div>
+          {/* Category Showcase */}
+          <CategoryShowcase />
 
           {/* Remaining Sections */}
           <div className="flex flex-col gap-4 lg:gap-6 w-full">
