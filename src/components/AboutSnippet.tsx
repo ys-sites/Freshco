@@ -1,9 +1,19 @@
 import { Play, Instagram } from 'lucide-react';
 import { useLanguage } from '../lib/LanguageContext';
+import { useState, useRef } from 'react';
 
 export function AboutSnippet() {
   const { lang } = useLanguage();
   const isFr = lang === 'fr';
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handlePlay = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+      setIsPlaying(true);
+    }
+  };
 
   return (
     <section id="about" className="relative overflow-hidden bg-gradient-to-br from-[#2D5A27] to-[#122b0f] border border-theme-border rounded-[24px] p-8 md:p-10 shadow-sleek flex flex-col md:flex-row gap-8 items-center w-full min-h-[400px]">
@@ -38,44 +48,48 @@ export function AboutSnippet() {
          </button>
        </div>
        
-       <a 
-         href="https://www.instagram.com/marche_freshco/" 
-         target="_blank"
-         rel="noopener noreferrer"
-         aria-label="Visit our Instagram Reels"
-         className="w-[220px] md:w-[260px] lg:w-[280px] aspect-[9/16] rounded-[24px] overflow-hidden relative shadow-2xl flex-shrink-0 z-10 border-[3px] border-white/20 group block mx-auto md:mx-0 transition-transform duration-300 hover:-translate-y-2 bg-black"
+       <div 
+         className="w-[220px] md:w-[260px] lg:w-[280px] aspect-[9/16] rounded-[24px] overflow-hidden relative shadow-2xl flex-shrink-0 z-10 border-[3px] border-white/20 group block mx-auto md:mx-0 bg-black"
        >
          <video
-           src="/ig.mp4"
-           autoPlay
-           loop
-           muted
+           ref={videoRef}
+           src="/ig.mp4#t=0.001"
+           preload="metadata"
            playsInline
+           controls={isPlaying}
            className="w-full h-full object-cover"
          />
          
-         {/* Top and Bottom Dark Gradients for UI readability */}
-         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/70 pointer-events-none"></div>
+         {!isPlaying && (
+           <>
+             {/* Top and Bottom Dark Gradients for UI readability */}
+             <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/70 pointer-events-none"></div>
 
-         {/* IG Overlay Ring & Logo */}
-         <div className="absolute top-4 left-4 p-[2px] rounded-full bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] shadow-lg">
-           <div className="bg-black/80 backdrop-blur-md rounded-full p-2 flex items-center justify-center">
-             <Instagram className="w-5 h-5 text-white" />
-           </div>
-         </div>
+             {/* IG Overlay Ring & Logo */}
+             <div className="absolute top-4 left-4 p-[2px] rounded-full bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] shadow-lg pointer-events-none">
+               <div className="bg-black/80 backdrop-blur-md rounded-full p-2 flex items-center justify-center">
+                 <Instagram className="w-5 h-5 text-white" />
+               </div>
+             </div>
 
-         {/* Animated Play Button */}
-         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[64px] h-[64px] bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/40 shadow-[0_4px_30px_rgba(0,0,0,0.3)] group-hover:bg-white/30 group-hover:scale-110 transition-all duration-300">
-           <Play className="w-8 h-8 text-white ml-1 fill-white" />
-         </div>
+             {/* Animated Play Button */}
+             <button 
+               onClick={handlePlay}
+               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[64px] h-[64px] bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/40 shadow-[0_4px_30px_rgba(0,0,0,0.3)] group-hover:bg-white/30 group-hover:scale-110 transition-all duration-300 cursor-pointer"
+               aria-label="Play video"
+             >
+               <Play className="w-8 h-8 text-white ml-1 fill-white" />
+             </button>
 
-         {/* Bottom Text matching screenshot style */}
-         <div className="absolute bottom-6 left-0 right-0 text-center px-4">
-            <span className="text-white font-bold text-[18px] md:text-[20px] tracking-wide uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-              MÁRCHE FRESHCO
-            </span>
-         </div>
-       </a>
+             {/* Bottom Text matching screenshot style */}
+             <div className="absolute bottom-6 left-0 right-0 text-center px-4 pointer-events-none">
+                <span className="text-white font-bold text-[18px] md:text-[20px] tracking-wide uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                  MÁRCHE FRESHCO
+                </span>
+             </div>
+           </>
+         )}
+       </div>
     </section>
   )
 }
