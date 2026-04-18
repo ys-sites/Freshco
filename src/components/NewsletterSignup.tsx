@@ -1,10 +1,43 @@
+import { useState } from 'react';
 import { motion } from 'motion/react';
-import { Mail, ArrowRight } from 'lucide-react';
+import { Mail, ArrowRight, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { useLanguage } from '../lib/LanguageContext';
 
 export function NewsletterSignup() {
   const { lang } = useLanguage();
   const isFr = lang === 'fr';
+
+  const [email, setEmail] = useState('');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+
+    setStatus('loading');
+    try {
+      const response = await fetch('https://services.leadconnectorhq.com/hooks/o7aUwpKbtkP4AOP0pEjC/webhook-trigger/10027693-207d-406c-94a7-bf55a8d3a524', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        setEmail('');
+        setTimeout(() => setStatus('idle'), 5000);
+      } else {
+        setStatus('error');
+        setTimeout(() => setStatus('idle'), 5000);
+      }
+    } catch (error) {
+      console.error('Webhook error:', error);
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 5000);
+    }
+  };
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-[#2D5A27] to-[#122b0f] rounded-[24px] p-5 lg:p-6 w-full h-full shadow-sleek border border-[#3E6F38] flex flex-col xl:flex-row xl:items-center justify-between gap-5 lg:gap-6">
@@ -43,24 +76,48 @@ export function NewsletterSignup() {
           viewport={{ once: true }}
           className="bg-white/10 backdrop-blur-md rounded-[16px] p-4 md:p-5 border border-white/20 shadow-xl"
         >
-          <div className="flex flex-col gap-2.5 md:gap-3">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-2.5 md:gap-3">
             <div className="relative">
               <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 md:w-4 md:h-4 text-white/60" />
               <input 
                 type="email" 
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                disabled={status === 'loading' || status === 'success'}
                 placeholder={isFr ? "Entrez votre adresse courriel..." : "Enter your email address..."}
-                className="w-full bg-black/20 focus:bg-black/40 text-white placeholder:text-white/60 h-[42px] md:h-[48px] pl-10 md:pl-10 pr-3 rounded-[10px] border border-white/10 focus:border-theme-accent focus:outline-none focus:ring-1 focus:ring-theme-accent transition-all text-[12px] md:text-[13px]"
+                className="w-full bg-black/20 focus:bg-black/40 text-white placeholder:text-white/60 h-[42px] md:h-[48px] pl-10 md:pl-10 pr-3 rounded-[10px] border border-white/10 focus:border-theme-accent focus:outline-none focus:ring-1 focus:ring-theme-accent transition-all text-[12px] md:text-[13px] disabled:opacity-50"
               />
             </div>
             
-            <button className="w-full h-[42px] md:h-[48px] bg-theme-accent hover:bg-[#EDA876] text-[#1A1A1A] font-bold text-[13px] md:text-[14px] rounded-[10px] flex items-center justify-center gap-1.5 transition-colors shadow-md">
-              {isFr ? "S'abonner Maintenant" : "Subscribe Now"}
-              <ArrowRight className="w-3.5 h-3.5 md:w-4 md:h-4" />
+            <button 
+              type="submit"
+              disabled={status === 'loading' || status === 'success'}
+              className="w-full h-[42px] md:h-[48px] bg-theme-accent hover:bg-[#EDA876] disabled:bg-theme-accent/80 text-[#1A1A1A] font-bold text-[13px] md:text-[14px] rounded-[10px] flex items-center justify-center gap-1.5 transition-colors shadow-md disabled:cursor-not-allowed"
+            >
+              {status === 'loading' ? (
+                <Loader2 className="w-4 h-4 animate-spin" />
+              ) : status === 'success' ? (
+                <>
+                  <CheckCircle className="w-4 h-4 text-green-700" />
+                  {isFr ? "Abonné avec succès!" : "Successfully subscribed!"}
+                </>
+              ) : status === 'error' ? (
+                <>
+                  <AlertCircle className="w-4 h-4 text-red-600" />
+                  {isFr ? "Erreur, réessayez" : "Error, please try again"}
+                </>
+              ) : (
+                <>
+                  {isFr ? "S'abonner Maintenant" : "Subscribe Now"}
+                  <ArrowRight className="w-3.5 h-3.5 md:w-4 md:h-4" />
+                </>
+              )}
             </button>
             <p className="text-center text-[9px] md:text-[10px] text-white/50 mt-0 md:mt-0.5 uppercase tracking-wider font-medium">
               {isFr ? "Pas de spam. Promis." : "No spam. We promise."}
             </p>
-          </div>
+          </form>
         </motion.div>
       </div>
     </section>
