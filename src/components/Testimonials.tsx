@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Star } from 'lucide-react';
+import { Star, User } from 'lucide-react';
 import { useLanguage } from '../lib/LanguageContext';
 
 export function Testimonials() {
@@ -90,7 +90,9 @@ export function Testimonials() {
                 "{t.text}"
               </p>
               <div className="flex items-center gap-3">
-                <img src={t.avatar} alt={t.author} className="w-10 h-10 rounded-full object-cover border-2 border-white/20" referrerPolicy="no-referrer" />
+                <div className="w-10 h-10 rounded-full bg-[#E0A96D]/30 flex items-center justify-center border-2 border-white/20 flex-shrink-0">
+                  <User className="w-5 h-5 text-white" />
+                </div>
                 <div>
                   <div className="font-bold text-[14px]">{t.author}</div>
                   <div className="text-[12px] text-white/70">{t.role}</div>
