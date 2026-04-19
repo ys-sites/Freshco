@@ -1,4 +1,4 @@
-import { MapPin, Clock, Phone, Instagram } from 'lucide-react';
+import { MapPin, Clock, Phone, Instagram, Facebook } from 'lucide-react';
 import { useLanguage } from '../lib/LanguageContext';
 
 export function StoreInfo() {
@@ -47,13 +47,24 @@ export function StoreInfo() {
         </div>
 
         {/* Instagram */}
-        <a href="https://www.instagram.com/marche_freshco/" target="_blank" rel="noopener noreferrer" className="flex gap-2.5 md:gap-3 items-start group cursor-pointer pb-1">
+        <a href="https://www.instagram.com/marche_freshco/" target="_blank" rel="noopener noreferrer" className="flex gap-2.5 md:gap-3 items-start group cursor-pointer pb-2">
           <div className="bg-[#E1306C]/10 text-[#E1306C] p-2 rounded-[10px] md:rounded-xl group-hover:bg-gradient-to-tr group-hover:from-[#F56040] group-hover:to-[#833AB4] group-hover:text-white transition-all">
             <Instagram className="w-3.5 h-3.5 md:w-4 md:h-4"/>
           </div>
           <div className="pt-0.5">
             <div className="text-[12px] md:text-[13px] font-bold text-theme-text mb-0.5">{isFr ? "Suivez-nous sur Instagram" : "Follow on Instagram"}</div>
             <div className="text-[11px] md:text-[12px] text-theme-muted font-medium">@marche_freshco</div>
+          </div>
+        </a>
+
+        {/* Facebook */}
+        <a href="https://www.facebook.com/profile.php?id=61576117831213" target="_blank" rel="noopener noreferrer" className="flex gap-2.5 md:gap-3 items-start group cursor-pointer pb-1">
+          <div className="bg-[#1877F2]/10 text-[#1877F2] p-2 rounded-[10px] md:rounded-xl group-hover:bg-[#1877F2] group-hover:text-white transition-all">
+            <Facebook className="w-3.5 h-3.5 md:w-4 md:h-4"/>
+          </div>
+          <div className="pt-0.5">
+            <div className="text-[12px] md:text-[13px] font-bold text-theme-text mb-0.5">{isFr ? "Aimez notre page Facebook" : "Like us on Facebook"}</div>
+            <div className="text-[11px] md:text-[12px] text-theme-muted font-medium">Márche Freshco</div>
           </div>
         </a>
       </div>

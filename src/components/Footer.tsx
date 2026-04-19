@@ -1,5 +1,5 @@
 import { useLanguage } from '../lib/LanguageContext';
-import { Instagram } from 'lucide-react';
+import { Instagram, Facebook } from 'lucide-react';
 
 export function Footer() {
   const { lang } = useLanguage();
@@ -64,10 +64,14 @@ export function Footer() {
                 9549 Boul Gouin O<br />Pierrefonds, QC H8Y 1R2
               </li>
               <li className="pt-1"><a href="mailto:hello@marchefreshco.com" className="text-white/90 hover:text-white text-[15px] transition-colors">hello@marchefreshco.com</a></li>
-              <li className="pt-3">
-                <a href="https://www.instagram.com/marche_freshco/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-white hover:text-white text-[14px] transition-colors bg-white/10 hover:bg-white/20 border border-transparent rounded-full px-4 py-2">
+              <li className="pt-3 flex flex-wrap gap-3">
+                <a href="https://www.instagram.com/marche_freshco/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-white hover:text-white text-[14px] transition-colors bg-white/10 hover:bg-[#E1306C]/80 border border-transparent rounded-full px-4 py-2 w-fit">
                   <Instagram className="w-4 h-4" />
                   <span>@marche_freshco</span>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61576117831213" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-white hover:text-white text-[14px] transition-colors bg-white/10 hover:bg-[#1877F2]/80 border border-transparent rounded-full px-4 py-2 w-fit">
+                  <Facebook className="w-4 h-4" />
+                  <span>Facebook</span>
                 </a>
               </li>
             </ul>
