@@ -36,14 +36,15 @@ export function WeeklyDeals() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.05, duration: 0.4 }}
-            whileHover={{ y: -6, scale: 1.02 }}
-            className="group flex flex-col bg-theme-surface rounded-[16px] overflow-hidden border border-transparent hover:border-theme-primary hover:shadow-lg transition-all shadow-sm cursor-pointer"
+            whileHover={{ y: -6, scale: 1.03, transition: { type: 'spring', stiffness: 600, damping: 25, mass: 0.5 } }}
+            whileTap={{ scale: 0.97, transition: { duration: 0.1 } }}
+            className="group flex flex-col bg-theme-surface rounded-[16px] overflow-hidden border border-transparent hover:border-theme-primary hover:shadow-lg transition-[border-color,box-shadow] shadow-sm cursor-pointer"
           >
             <div className="aspect-square w-full overflow-hidden relative bg-white">
               <img
                 src={product.src}
                 alt={product.name}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 referrerPolicy="no-referrer"
               />
             </div>

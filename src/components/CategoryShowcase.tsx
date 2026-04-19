@@ -29,10 +29,14 @@ export function CategoryShowcase() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
-            whileHover={{ y: -4, scale: 1.03 }}
-            className="flex flex-col items-center justify-center rounded-[10px] md:rounded-[12px] bg-theme-surface p-2 md:p-2.5 text-center border border-transparent hover:border-theme-primary hover:shadow-md hover:bg-white transition-all cursor-pointer"
+            whileHover={{ y: -5, scale: 1.06, transition: { type: 'spring', stiffness: 700, damping: 22, mass: 0.4 } }}
+            whileTap={{ scale: 0.94, transition: { duration: 0.08 } }}
+            className="flex flex-col items-center justify-center rounded-[10px] md:rounded-[12px] bg-theme-surface p-2 md:p-2.5 text-center border border-transparent hover:border-theme-primary hover:shadow-md hover:bg-white transition-[border-color,box-shadow,background-color] cursor-pointer"
           >
-            <div className="text-[18px] md:text-[20px] mb-0.5">{category.emoji}</div>
+            <motion.div
+              className="text-[18px] md:text-[20px] mb-0.5"
+              whileHover={{ rotate: [0, -10, 10, -6, 0], transition: { duration: 0.4 } }}
+            >{category.emoji}</motion.div>
             <h3 className="text-[11px] md:text-[12px] font-bold text-theme-text leading-tight">{category.name}</h3>
             <p className="text-[9px] md:text-[9px] text-theme-muted mt-0.5 font-medium">{category.description}</p>
           </motion.div>

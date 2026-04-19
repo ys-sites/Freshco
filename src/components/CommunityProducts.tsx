@@ -82,14 +82,15 @@ export function CommunityProducts() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 + 0.2 }}
-            whileHover={{ y: -6, scale: 1.02 }}
-            className="group relative overflow-hidden rounded-[24px] bg-white shadow-sm border border-theme-border flex flex-col h-full hover:shadow-xl hover:border-theme-primary transition-all cursor-pointer"
+            whileHover={{ y: -8, scale: 1.02, transition: { type: 'spring', stiffness: 600, damping: 25, mass: 0.5 } }}
+            whileTap={{ scale: 0.97, transition: { duration: 0.1 } }}
+            className="group relative overflow-hidden rounded-[24px] bg-white shadow-sm border border-theme-border flex flex-col h-full hover:shadow-xl hover:border-theme-primary transition-[border-color,box-shadow] cursor-pointer"
           >
             <div className="h-[220px] w-full overflow-hidden relative">
               <img 
                 src={community.image} 
                 alt={community.title} 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" 
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
