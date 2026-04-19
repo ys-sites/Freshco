@@ -10,7 +10,7 @@ export function StoreInfo() {
   const isFr = lang === 'fr';
 
   return (
-    <section className="bg-theme-card border border-theme-border rounded-[20px] p-4 md:p-4 shadow-sleek w-full">
+    <section className="bg-theme-card border border-theme-border rounded-[20px] p-4 md:p-4 shadow-sleek w-full relative z-10">
       <div className="flex justify-between items-center mb-3 md:mb-4">
         <h2 className="text-[16px] md:text-[18px] font-bold text-theme-text">{isFr ? "Ouverture et Emplacement" : "Hours & Location"}</h2>
         <span className="text-theme-muted font-bold">→</span>
@@ -77,7 +77,7 @@ export function StoreInfo() {
           href="https://www.instagram.com/marche_freshco/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex gap-2.5 md:gap-3 items-start group cursor-pointer pb-2"
+          className="flex gap-2.5 md:gap-3 items-start group cursor-pointer pb-2 relative z-10"
           whileHover={{ x: 4, transition: SPRING }}
           whileTap={TAP}
         >
@@ -98,7 +98,7 @@ export function StoreInfo() {
           href="https://www.facebook.com/profile.php?id=61576117831213"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex gap-2.5 md:gap-3 items-start group cursor-pointer pb-1"
+          className="flex gap-2.5 md:gap-3 items-start group cursor-pointer pb-1 relative z-10"
           whileHover={{ x: 4, transition: SPRING }}
           whileTap={TAP}
         >
