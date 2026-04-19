@@ -17,6 +17,14 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-theme-bg font-sans text-theme-text selection:bg-theme-accent selection:text-black flex flex-col overflow-x-hidden relative">
       
+      {/* Floating Side Decorations (Visible on Large Screens) */}
+      <div className="hidden min-[1300px]:block pointer-events-none fixed top-[18%] left-0 w-[220px] 2xl:w-[300px] z-0 mix-blend-multiply opacity-90 transform -translate-x-[45%]">
+        <img src="/bg_leaf_left.png" alt="" className="w-full h-auto object-contain" />
+      </div>
+      <div className="hidden min-[1300px]:block pointer-events-none fixed top-[45%] right-0 w-[240px] 2xl:w-[320px] z-0 mix-blend-multiply opacity-90 transform translate-x-[40%]">
+        <img src="/bg_herbs_right.png" alt="" className="w-full h-auto object-contain" />
+      </div>
+
       {/* Main Content Area */}
       <div className="relative z-10 flex flex-col min-h-screen border-b border-theme-border">
         <Navbar />
