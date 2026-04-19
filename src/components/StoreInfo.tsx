@@ -54,7 +54,8 @@ export function StoreInfo() {
         </motion.div>
 
         {/* Phone */}
-        <motion.div
+        <motion.a
+          href="tel:4389697966"
           className="flex gap-2.5 md:gap-3 items-start group cursor-pointer border-b border-theme-border/60 pb-2.5 md:pb-3"
           whileHover={{ x: 4, transition: SPRING }}
           whileTap={TAP}
@@ -69,7 +70,7 @@ export function StoreInfo() {
             <div className="text-[12px] md:text-[13px] font-bold text-theme-text mb-0.5">{isFr ? "Contact Direct" : "Direct Contact"}</div>
             <div className="text-[11px] md:text-[12px] text-theme-muted font-medium">(438) 969-7966</div>
           </div>
-        </motion.div>
+        </motion.a>
 
         {/* Instagram */}
         <motion.a
