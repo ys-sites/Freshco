@@ -60,7 +60,7 @@ export function Navbar() {
             </button>
           </div>
 
-          <a href="tel:4389697966" className="hidden sm:flex h-9 w-9 md:h-10 md:w-10 items-center justify-center rounded-full bg-theme-surface text-theme-primary hover:bg-theme-border hover:scale-110 active:scale-95 transition-all">
+          <a href="tel:5145421166" className="hidden sm:flex h-9 w-9 md:h-10 md:w-10 items-center justify-center rounded-full bg-theme-surface text-theme-primary hover:bg-theme-border hover:scale-110 active:scale-95 transition-all">
             <Phone className="h-4 w-4 md:h-5 md:w-5" />
           </a>
         </div>
@@ -69,3 +69,4 @@ export function Navbar() {
     </motion.header>
   );
 }
+

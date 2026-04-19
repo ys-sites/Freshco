@@ -20,7 +20,7 @@ export function FAQ() {
         },
         {
           question: "Quels sont les horaires d'ouverture de Marché Freshco ?",
-          answer: "Marché Freshco est ouvert 7 jours sur 7, de 08h00 à 21h00. Vous pouvez nous joindre par téléphone au (438) 969-7966.",
+          answer: "Marché Freshco est ouvert 7 jours sur 7, de 08h00 à 21h00. Vous pouvez nous joindre par téléphone au (514) 542-1166.",
         },
         {
           question: "La viande vendue chez Marché Freshco est-elle 100% Halal ?",
@@ -32,11 +32,11 @@ export function FAQ() {
         },
         {
           question: "Marché Freshco propose-t-il des commandes de boucherie personnalisées ?",
-          answer: "Oui ! Notre boucherie halal accepte des commandes personnalisées pour des coupes spécifiques d'agneau, de bœuf ou de volaille. Contactez-nous au (438) 969-7966 pour planifier votre commande.",
+          answer: "Oui ! Notre boucherie halal accepte des commandes personnalisées pour des coupes spécifiques d'agneau, de bœuf ou de volaille. Contactez-nous au (514) 542-1166 pour planifier votre commande.",
         },
         {
           question: "Comment contacter Marché Freshco ?",
-          answer: "Vous pouvez nous joindre par téléphone au (438) 969-7966, par courriel à Marchefreshco@gmail.com, ou nous suivre sur Instagram @marche_freshco et Facebook (Marché Freshco).",
+          answer: "Vous pouvez nous joindre par téléphone au (514) 542-1166, par courriel à Marchefreshco@gmail.com, ou nous suivre sur Instagram @marche_freshco et Facebook (Marché Freshco).",
         },
         {
           question: "Y a-t-il des promotions ou spéciaux de la semaine chez Marché Freshco ?",
@@ -50,7 +50,7 @@ export function FAQ() {
         },
         {
           question: "What are the hours of operation at Marché Freshco?",
-          answer: "Marché Freshco is open 7 days a week from 8:00 AM to 9:00 PM. You can reach us by phone at (438) 969-7966.",
+          answer: "Marché Freshco is open 7 days a week from 8:00 AM to 9:00 PM. You can reach us by phone at (514) 542-1166.",
         },
         {
           question: "Is the meat at Marché Freshco 100% Halal?",
@@ -62,11 +62,11 @@ export function FAQ() {
         },
         {
           question: "Does Marché Freshco offer custom butcher orders?",
-          answer: "Yes! Our halal butcher accepts custom orders for specific cuts of lamb, beef, or poultry. Contact us at (438) 969-7966 to arrange your custom order.",
+          answer: "Yes! Our halal butcher accepts custom orders for specific cuts of lamb, beef, or poultry. Contact us at (514) 542-1166 to arrange your custom order.",
         },
         {
           question: "How can I contact Marché Freshco?",
-          answer: "You can reach us by phone at (438) 969-7966, by email at Marchefreshco@gmail.com, or follow us on Instagram @marche_freshco and on Facebook (Marché Freshco).",
+          answer: "You can reach us by phone at (514) 542-1166, by email at Marchefreshco@gmail.com, or follow us on Instagram @marche_freshco and on Facebook (Marché Freshco).",
         },
         {
           question: "Does Marché Freshco have weekly deals or a flyer?",
@@ -180,3 +180,4 @@ export function FAQ() {
     </section>
   );
 }
+

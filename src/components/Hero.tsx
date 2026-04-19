@@ -77,3 +77,4 @@ export function Hero({ className = '' }: { className?: string }) {
     </section>
   );
 }
+

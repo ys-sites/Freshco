@@ -78,7 +78,7 @@ export function SEO({ currentPath }: { currentPath: string }) {
         'https://marchefreshco.com/thumbnail.jpg',
         'https://marchefreshco.com/halal.jpg',
       ],
-      telephone: '+14389697966',
+      telephone: '+15145421166',
       email: 'Marchefreshco@gmail.com',
       address: {
         '@type': 'PostalAddress',
@@ -160,7 +160,7 @@ export function SEO({ currentPath }: { currentPath: string }) {
           description: isFr
             ? 'Boucherie 100% Halal Zabiha. Bœuf, veau, agneau, chèvre et volaille découpés sur place chaque jour. Commandes personnalisées acceptées.'
             : '100% Zabiha Halal butcher. Beef, veal, lamb, goat, and poultry cut in-house daily. Custom orders accepted.',
-          telephone: '+14389697966',
+          telephone: '+15145421166',
         },
       ],
     };
@@ -236,3 +236,4 @@ export function SEO({ currentPath }: { currentPath: string }) {
 
   return null;
 }
+

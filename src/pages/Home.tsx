@@ -89,7 +89,7 @@ export default function Home() {
 
       {/* Mobile Floating Action Button - Phone */}
       <a 
-        href="tel:4389697966" 
+        href="tel:5145421166" 
         className="md:hidden fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-theme-primary text-white shadow-lg shadow-theme-primary/40 active:scale-95 transition-all"
         aria-label="Call Store"
       >
@@ -98,3 +98,4 @@ export default function Home() {
     </div>
   );
 }
+
