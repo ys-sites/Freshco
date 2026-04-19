@@ -39,9 +39,9 @@ const categories = [
   {
     nameFr: 'POULET', nameEn: 'CHICKEN',
     items: [
-      { nameFr: 'Poulet dur', nameEn: 'Hard Chicken', price: '$7.99/lb' },
+      { nameFr: 'Poulet dur', nameEn: 'Hard Chicken', price: 'Prix en magasin / In-store' },
       { nameFr: 'Poulet haché', nameEn: 'Chicken Mince', price: '$7.99/lb' },
-      { nameFr: 'Pattes de poulet', nameEn: 'Chicken Feet', price: '$4.15/lb' },
+      { nameFr: 'Pattes de poulet', nameEn: 'Chicken Feet', price: 'Prix en magasin / In-store' },
       { nameFr: 'Poulet entier', nameEn: 'Whole Chicken', price: '$3.49/lb' },
       { nameFr: 'Cuisses de poulet avec os', nameEn: 'Chicken Legs with bone', price: '$4.29/lb' },
       { nameFr: 'Pilons de poulet avec os', nameEn: 'Chicken Drumsticks with bone', price: '$4.29/lb' },
