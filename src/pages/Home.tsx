@@ -31,7 +31,7 @@ export default function Home() {
       <div className="hidden xl:block pointer-events-none fixed top-[25%] right-0 w-[180px] 2xl:w-[240px] z-0 mix-blend-multiply opacity-90 transform translate-x-[40%] -rotate-12 hover:translate-x-[35%] transition-transform duration-700">
         <img src="/4.png" alt="" className="w-full h-auto object-contain" />
       </div>
-      <div className="hidden xl:block pointer-events-none fixed top-[65%] right-0 w-[180px] 2xl:w-[240px] z-0 mix-blend-multiply opacity-90 transform translate-x-[40%] rotate-6 hover:translate-x-[35%] transition-transform duration-700">
+      <div className="hidden xl:block pointer-events-none fixed top-[65%] right-0 w-[180px] 2xl:w-[240px] z-0 mix-blend-multiply opacity-90 transform translate-x-[15%] rotate-6 hover:translate-x-[10%] transition-transform duration-700">
         <img src="/5.png" alt="" className="w-full h-auto object-contain" />
       </div>
 
