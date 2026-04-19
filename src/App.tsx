@@ -22,6 +22,17 @@ export default function App() {
     };
   }, []);
 
+  // Global scroll-to-top handler on path change
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    
+    // Fallback timer to ensure new component height is calculated across all devices
+    const timer = setTimeout(() => {
+       window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }, 20);
+    return () => clearTimeout(timer);
+  }, [currentPath]);
+
   // Return the correct page based on current route
   if (currentPath === '/boucherie-prix') {
     return <BoucheriePricesPage />;
