@@ -1,10 +1,12 @@
 import { motion } from 'motion/react';
+import { useRef } from 'react';
 import { useLanguage } from '../lib/LanguageContext';
 import { ArrowRight } from 'lucide-react';
 
 export function CommunityProducts() {
   const { lang } = useLanguage();
   const isFr = lang === 'fr';
+  const isTouch = useRef(typeof window !== 'undefined' && window.matchMedia('(hover: none)').matches).current;
 
   const communities = [
     {
@@ -82,15 +84,16 @@ export function CommunityProducts() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 + 0.2 }}
-            whileHover={{ y: -8, scale: 1.02, transition: { type: 'spring', stiffness: 600, damping: 25, mass: 0.5 } }}
-            whileTap={{ scale: 0.97, transition: { duration: 0.1 } }}
-            className="group relative overflow-hidden rounded-[24px] bg-white shadow-sm border border-theme-border flex flex-col h-full hover:shadow-xl hover:border-theme-primary transition-[border-color,box-shadow] cursor-pointer"
+            whileHover={isTouch ? undefined : { y: -8, scale: 1.02, transition: { type: 'spring', stiffness: 600, damping: 25, mass: 0.5 } }}
+            whileTap={{ scale: 0.97, transition: { duration: 0.08 } }}
+            className="motion-card group relative overflow-hidden rounded-[24px] bg-white shadow-sm border border-theme-border flex flex-col h-full hover:shadow-xl hover:border-theme-primary transition-[border-color,box-shadow] cursor-pointer"
           >
             <div className="h-[220px] w-full overflow-hidden relative">
               <img 
                 src={community.image} 
                 alt={community.title} 
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" 
+                className="w-full h-full object-cover transition-transform duration-300" 
+                style={{ transform: 'translateZ(0)' }}
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>

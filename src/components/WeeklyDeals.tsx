@@ -1,9 +1,12 @@
 import { motion } from 'motion/react';
+import { useRef } from 'react';
 import { useLanguage } from '../lib/LanguageContext';
 
 export function WeeklyDeals() {
   const { lang } = useLanguage();
   const isFr = lang === 'fr';
+  // Detect touch screens to skip whileHover (touch hover = slow, laggy reaction)
+  const isTouch = useRef(typeof window !== 'undefined' && window.matchMedia('(hover: none)').matches).current;
 
   const weeklyDeals = [
     { id: 1, name: isFr ? 'Bananes Plantains' : 'Green Plantains', price: '$1.49/lb', src: '/plantains.jpg' },
@@ -36,15 +39,16 @@ export function WeeklyDeals() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.05, duration: 0.4 }}
-            whileHover={{ y: -6, scale: 1.03, transition: { type: 'spring', stiffness: 600, damping: 25, mass: 0.5 } }}
-            whileTap={{ scale: 0.97, transition: { duration: 0.1 } }}
-            className="group flex flex-col bg-theme-surface rounded-[16px] overflow-hidden border border-transparent hover:border-theme-primary hover:shadow-lg transition-[border-color,box-shadow] shadow-sm cursor-pointer"
+            whileHover={isTouch ? undefined : { y: -6, scale: 1.03, transition: { type: 'spring', stiffness: 600, damping: 25, mass: 0.5 } }}
+            whileTap={{ scale: 0.97, transition: { duration: 0.08 } }}
+            className="motion-card group flex flex-col bg-theme-surface rounded-[16px] overflow-hidden border border-transparent hover:border-theme-primary hover:shadow-lg transition-[border-color,box-shadow] shadow-sm cursor-pointer"
           >
             <div className="aspect-square w-full overflow-hidden relative bg-white">
               <img
                 src={product.src}
                 alt={product.name}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                className="w-full h-full object-cover transition-transform duration-300"
+                style={{ transform: 'translateZ(0)' }}
                 referrerPolicy="no-referrer"
               />
             </div>

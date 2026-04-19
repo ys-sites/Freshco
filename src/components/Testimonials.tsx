@@ -1,6 +1,6 @@
-import { motion } from 'motion/react';
 import { Star, User } from 'lucide-react';
 import { useLanguage } from '../lib/LanguageContext';
+
 
 export function Testimonials() {
   const { lang } = useLanguage();
@@ -40,9 +40,9 @@ export function Testimonials() {
   return (
     <section className="bg-gradient-to-br from-[#2D5A27] to-[#122b0f] text-white border border-theme-border rounded-[24px] py-8 md:py-10 shadow-sleek w-full relative overflow-hidden">
       
-      {/* Decorative Background Elements from Email Marketing */}
-      <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-[#3E6F38]/40 blur-3xl mix-blend-screen pointer-events-none"></div>
-      <div className="absolute bottom-0 left-0 -ml-16 -mb-16 w-64 h-64 rounded-full bg-[#E0A96D]/30 blur-3xl mix-blend-screen pointer-events-none"></div>
+      {/* Decorative Background Elements */}
+      <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-[#3E6F38]/40 blur-2xl pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 -ml-16 -mb-16 w-64 h-64 rounded-full bg-[#E0A96D]/30 blur-2xl pointer-events-none"></div>
       <div className="absolute inset-0 opacity-10 pointer-events-none mix-blend-overlay border-none">
         <img 
           src="https://images.unsplash.com/photo-1606148386121-68b3cc359ea4?q=80&w=1500&auto=format&fit=crop" 
@@ -65,21 +65,13 @@ export function Testimonials() {
       </div>
 
       <div className="relative z-10 w-full overflow-hidden pb-4 pt-1">
-        <motion.div 
-          className="flex gap-6 px-8 md:px-10 w-max"
-          animate={{ x: ["0%", "-50%"] }}
-          transition={{
-            duration: 30,
-            ease: "linear",
-            repeat: Infinity,
-            repeatType: "loop"
-          }}
-        >
+        {/* testimonials-track uses pure CSS animation from index.css — smoother on mobile */}
+        <div className="testimonials-track gap-6 px-8 md:px-10">
           {/* Double array for seamless looping */}
           {[...testimonials, ...testimonials].map((t, idx) => (
             <div 
               key={idx}
-              className="bg-white/10 backdrop-blur-sm rounded-[16px] p-6 border border-white/10 shadow-xl w-[320px] md:w-[380px] flex-shrink-0"
+              className="bg-white/10 rounded-[16px] p-6 border border-white/10 shadow-xl w-[320px] md:w-[380px] flex-shrink-0"
             >
               <div className="flex gap-1 mb-4">
                 {[...Array(t.rating)].map((_, i) => (
@@ -100,7 +92,7 @@ export function Testimonials() {
               </div>
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

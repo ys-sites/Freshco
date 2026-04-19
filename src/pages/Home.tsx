@@ -11,6 +11,7 @@ import { StoreInfo } from '../components/StoreInfo';
 import { Testimonials } from '../components/Testimonials';
 import { NewsletterSignup } from '../components/NewsletterSignup';
 import { Footer } from '../components/Footer';
+import { FAQ } from '../components/FAQ';
 import { Phone } from 'lucide-react';
 
 export default function Home() {
@@ -76,6 +77,8 @@ export default function Home() {
           <Boucherie />
           <Produce />
           <Testimonials />
+          {/* FAQ — core AEO section: structured Q&A for AI answer engines */}
+          <FAQ />
         </div>
 
       </main>

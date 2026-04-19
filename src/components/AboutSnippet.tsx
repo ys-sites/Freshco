@@ -18,9 +18,9 @@ export function AboutSnippet() {
   return (
     <section id="about" className="relative overflow-hidden bg-gradient-to-br from-[#2D5A27] to-[#122b0f] border border-theme-border rounded-[24px] p-8 md:p-10 shadow-sleek flex flex-col md:flex-row gap-8 items-center w-full min-h-[400px]">
        
-       {/* Decorative Background Elements from Email Marketing */}
-       <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-[#3E6F38]/40 blur-3xl mix-blend-screen pointer-events-none"></div>
-       <div className="absolute bottom-0 left-0 -ml-16 -mb-16 w-64 h-64 rounded-full bg-[#E0A96D]/30 blur-3xl mix-blend-screen pointer-events-none"></div>
+       {/* Decorative Background Elements */}
+       <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-[#3E6F38]/40 blur-2xl pointer-events-none"></div>
+       <div className="absolute bottom-0 left-0 -ml-16 -mb-16 w-64 h-64 rounded-full bg-[#E0A96D]/30 blur-2xl pointer-events-none"></div>
        <div className="absolute inset-0 opacity-10 pointer-events-none mix-blend-overlay">
          <img 
            src="https://images.unsplash.com/photo-1606148386121-68b3cc359ea4?q=80&w=1500&auto=format&fit=crop" 

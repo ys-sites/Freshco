@@ -1,19 +1,21 @@
 import { useLanguage } from '../lib/LanguageContext';
 import { ChevronRight } from 'lucide-react';
 import { motion } from 'motion/react';
+import { useRef } from 'react';
 
 const SPRING = { type: 'spring' as const, stiffness: 600, damping: 25, mass: 0.5 };
 
 export function Boucherie() {
   const { lang } = useLanguage();
   const isFr = lang === 'fr';
+  const isTouch = useRef(typeof window !== 'undefined' && window.matchMedia('(hover: none)').matches).current;
 
   return (
     <section className="bg-theme-card border border-theme-border rounded-[24px] p-8 md:p-10 shadow-sleek relative overflow-hidden flex flex-col md:flex-row-reverse gap-8 items-center w-full" id="halal">
        <div className="flex-1 z-10 w-full">
          <motion.div
            className="inline-block rounded-full bg-theme-surface px-4 py-1.5 text-[11px] font-bold text-theme-primary uppercase tracking-wider mb-4 cursor-default"
-           whileHover={{ scale: 1.05, transition: SPRING }}
+           whileHover={isTouch ? undefined : { scale: 1.05, transition: SPRING }}
          >
            {isFr ? 'Notre Boucherie' : 'Our Boucherie'}
          </motion.div>
@@ -34,7 +36,7 @@ export function Boucherie() {
              <motion.span
                key={label}
                className="bg-white px-3 py-1.5 rounded-md shadow-sm border border-theme-border cursor-default"
-               whileHover={{ y: -3, scale: 1.05, transition: SPRING }}
+               whileHover={isTouch ? undefined : { y: -3, scale: 1.05, transition: SPRING }}
                whileTap={{ scale: 0.96, transition: { duration: 0.08 } }}
              >
                ✓ {label}
@@ -49,8 +51,8 @@ export function Boucherie() {
              window.history.pushState({}, '', '/boucherie-prix');
              window.dispatchEvent(new Event('popstate'));
            }}
-           className="mt-6 sm:mt-8 bg-theme-primary text-white font-bold py-3.5 px-6 rounded-[12px] inline-flex items-center gap-2 hover:bg-[#1f4a18] hover:shadow-lg transition-[background-color,box-shadow] w-full sm:w-auto justify-center"
-           whileHover={{ scale: 1.05, y: -3, transition: SPRING }}
+           className="motion-card mt-6 sm:mt-8 bg-theme-primary text-white font-bold py-3.5 px-6 rounded-[12px] inline-flex items-center gap-2 hover:bg-[#1f4a18] hover:shadow-lg transition-[background-color,box-shadow] w-full sm:w-auto justify-center"
+           whileHover={isTouch ? undefined : { scale: 1.05, y: -3, transition: SPRING }}
            whileTap={{ scale: 0.95, transition: { duration: 0.08 } }}
          >
            {isFr ? 'Voir nos prix détaillés' : 'View our detailed prices'} <ChevronRight className="w-5 h-5"/>
@@ -58,14 +60,15 @@ export function Boucherie() {
        </div>
        
        <motion.div
-         className="w-full md:w-[45%] h-64 md:h-[320px] rounded-[16px] overflow-hidden relative shadow-sm flex-shrink-0 border border-theme-border"
-         whileHover={{ scale: 1.02, transition: SPRING }}
+         className="motion-card w-full md:w-[45%] h-64 md:h-[320px] rounded-[16px] overflow-hidden relative shadow-sm flex-shrink-0 border border-theme-border"
+         whileHover={isTouch ? undefined : { scale: 1.02, transition: SPRING }}
        >
          <img 
            src="/halal.jpg" 
            alt="Our Halal Boucherie"
            referrerPolicy="no-referrer"
-           className="w-full h-full object-cover hover:scale-110 transition-transform duration-300" 
+           className="w-full h-full object-cover transition-transform duration-300"
+           style={{ transform: 'translateZ(0)' }}
          />
        </motion.div>
     </section>
