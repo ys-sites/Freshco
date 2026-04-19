@@ -43,9 +43,7 @@ export function AboutSnippet() {
              ? "Marché Freshco a été fondé pour offrir à la diaspora montréalaise une destination unique et de confiance pour des viandes Halal de première qualité, des produits biologiques frais et des ingrédients rares d'Asie du Sud et d'Afrique."
              : "Marché Freshco was founded to provide the Montreal diaspora with a single, trusted destination for premium Halal meats, fresh organic produce, and hard-to-find ingredients from South Asia and Africa."}
          </p>
-         <button className="bg-white text-theme-primary font-bold py-3.5 px-7 rounded-xl text-[14px] hover:bg-theme-surface hover:scale-105 active:scale-95 transition-all shadow-sm">
-           {isFr ? 'En Savoir Plus' : 'Learn More'}
-         </button>
+
        </div>
        
        <div 
