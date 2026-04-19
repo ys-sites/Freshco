@@ -83,9 +83,9 @@ export default function BoucheriePricesPage() {
             </div>
             <span className="font-bold hidden sm:block uppercase tracking-wide text-sm">{isFr ? 'Retour à l\'accueil' : 'Back to Home'}</span>
           </a>
-          <div className="flex items-center gap-1 sm:gap-2 text-[22px] sm:text-2xl font-extrabold tracking-tight text-theme-primary uppercase whitespace-nowrap">
-            <img src="/logo.png" alt="Marché Freshco Logo" className="w-[72px] h-[72px] md:w-[110px] md:h-[110px] object-contain flex-shrink-0 drop-shadow-sm -ml-2 scale-[1.1] md:scale-[1.2]" />
-            <span>Marché Freshco</span>
+          <div className="flex items-center gap-2 sm:gap-3 text-[22px] sm:text-2xl font-extrabold tracking-tight text-theme-primary uppercase whitespace-nowrap">
+            <img src="/logo_cropped.png" alt="Marché Freshco Logo" className="w-10 h-10 md:w-14 md:h-14 object-contain flex-shrink-0 drop-shadow-sm" />
+            <span className="pt-1">Marché Freshco</span>
           </div>
           <div className="flex items-center gap-2 text-[15px] font-bold">
             <button onClick={() => setLang('en')} className={lang === 'en' ? 'text-theme-text' : 'text-theme-muted hover:text-theme-text transition-colors'}>EN</button>
