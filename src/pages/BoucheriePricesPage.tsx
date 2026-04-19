@@ -1,7 +1,6 @@
 import { useLanguage } from '../lib/LanguageContext';
 import { motion } from 'motion/react';
 import { ArrowLeft } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const categories = [
   {
@@ -74,12 +73,16 @@ export default function BoucheriePricesPage() {
     >
       <header className="sticky top-0 z-50 w-full border-b border-theme-border bg-white shadow-sm">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
-          <Link to="/" className="flex items-center gap-2 group text-theme-muted hover:text-theme-primary transition-colors">
+          <a href="/" onClick={(e) => {
+            e.preventDefault();
+            window.history.pushState({}, '', '/');
+            window.dispatchEvent(new Event('popstate'));
+          }} className="flex items-center gap-2 group text-theme-muted hover:text-theme-primary transition-colors">
             <div className="w-10 h-10 rounded-full bg-theme-surface flex items-center justify-center group-hover:bg-theme-primary group-hover:text-white transition-all">
               <ArrowLeft className="w-5 h-5"/>
             </div>
             <span className="font-bold hidden sm:block uppercase tracking-wide text-sm">{isFr ? 'Retour à l\'accueil' : 'Back to Home'}</span>
-          </Link>
+          </a>
           <div className="flex items-center gap-2 text-[22px] sm:text-2xl font-extrabold tracking-tight text-theme-primary uppercase whitespace-nowrap">
             <div className="w-8 h-8 bg-theme-primary rounded-lg flex-shrink-0"></div>
             <span>Márche Freshco</span>
