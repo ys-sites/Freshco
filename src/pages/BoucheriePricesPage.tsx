@@ -84,7 +84,7 @@ export default function BoucheriePricesPage() {
             <span className="font-bold hidden sm:block uppercase tracking-wide text-sm">{isFr ? 'Retour à l\'accueil' : 'Back to Home'}</span>
           </a>
           <div className="flex items-center gap-2 text-[22px] sm:text-2xl font-extrabold tracking-tight text-theme-primary uppercase whitespace-nowrap">
-            <div className="w-8 h-8 bg-theme-primary rounded-lg flex-shrink-0"></div>
+            <img src="/logo.png" alt="Márche Freshco Logo" className="w-8 h-8 md:w-10 md:h-10 object-contain flex-shrink-0 drop-shadow-sm" />
             <span>Márche Freshco</span>
           </div>
           <div className="flex items-center gap-2 text-[15px] font-bold">

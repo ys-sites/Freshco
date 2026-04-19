@@ -28,9 +28,7 @@ export function Footer() {
           {/* Left Column: Brand Bio */}
           <div className="flex flex-col gap-6 pr-0 lg:pr-12">
             <div className="flex items-center gap-3 text-2xl font-extrabold tracking-tight text-white mb-4">
-              <div className="w-[44px] h-[44px] bg-white rounded-full flex items-center justify-center flex-shrink-0 text-[#2D5A27]">
-                <span className="font-serif italic font-bold leading-none mt-1 text-[26px]">M</span>
-              </div>
+              <img src="/logo.png" alt="Márche Freshco Logo" className="w-[44px] h-[44px] object-contain flex-shrink-0 drop-shadow-lg" />
               <span className="font-serif text-[26px]">Márche Freshco</span>
             </div>
             
