@@ -36,7 +36,8 @@ export function WeeklyDeals() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.05, duration: 0.4 }}
-            className="group flex flex-col bg-theme-surface rounded-[16px] overflow-hidden border border-transparent hover:border-theme-primary transition-all shadow-sm"
+            whileHover={{ y: -6, scale: 1.02 }}
+            className="group flex flex-col bg-theme-surface rounded-[16px] overflow-hidden border border-transparent hover:border-theme-primary hover:shadow-lg transition-all shadow-sm cursor-pointer"
           >
             <div className="aspect-square w-full overflow-hidden relative bg-white">
               <img

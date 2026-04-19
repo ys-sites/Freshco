@@ -29,7 +29,8 @@ export function CategoryShowcase() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
-            className="flex flex-col items-center justify-center rounded-[10px] md:rounded-[12px] bg-theme-surface p-2 md:p-2.5 text-center border border-transparent hover:border-theme-primary hover:bg-white transition-colors cursor-pointer"
+            whileHover={{ y: -4, scale: 1.03 }}
+            className="flex flex-col items-center justify-center rounded-[10px] md:rounded-[12px] bg-theme-surface p-2 md:p-2.5 text-center border border-transparent hover:border-theme-primary hover:shadow-md hover:bg-white transition-all cursor-pointer"
           >
             <div className="text-[18px] md:text-[20px] mb-0.5">{category.emoji}</div>
             <h3 className="text-[11px] md:text-[12px] font-bold text-theme-text leading-tight">{category.name}</h3>

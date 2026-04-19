@@ -27,7 +27,7 @@ export function Footer() {
           
           {/* Left Column: Brand Bio */}
           <div className="flex flex-col gap-6 pr-0 lg:pr-12">
-            <div className="flex items-center gap-3 text-2xl font-extrabold tracking-tight text-white mb-4">
+            <div className="flex items-center gap-3 text-2xl font-extrabold tracking-tight text-white mb-4 hover:scale-105 active:scale-95 transition-transform cursor-pointer w-fit">
               <img src="/logo_cropped.png" alt="Marché Freshco Logo" className="w-[44px] h-[44px] md:w-[50px] md:h-[50px] object-contain flex-shrink-0 drop-shadow-lg" />
               <span className="font-serif text-[26px] pt-1">Marché Freshco</span>
             </div>
@@ -63,11 +63,11 @@ export function Footer() {
               </li>
               <li className="pt-1"><a href="mailto:Marchefreshco@gmail.com" className="text-white/90 hover:text-white text-[15px] transition-colors">Marchefreshco@gmail.com</a></li>
               <li className="pt-3 flex flex-wrap gap-3">
-                <a href="https://www.instagram.com/marche_freshco/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-white hover:text-white text-[14px] transition-colors bg-white/10 hover:bg-[#E1306C]/80 border border-transparent rounded-full px-4 py-2 w-fit">
+                <a href="https://www.instagram.com/marche_freshco/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-white hover:text-white text-[14px] transition-all bg-white/10 hover:bg-[#E1306C]/80 hover:scale-105 active:scale-95 border border-transparent rounded-full px-4 py-2 w-fit hover:shadow-lg">
                   <Instagram className="w-4 h-4" />
                   <span>@marche_freshco</span>
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=61576117831213" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-white hover:text-white text-[14px] transition-colors bg-white/10 hover:bg-[#1877F2]/80 border border-transparent rounded-full px-4 py-2 w-fit">
+                <a href="https://www.facebook.com/profile.php?id=61576117831213" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-white hover:text-white text-[14px] transition-all bg-white/10 hover:bg-[#1877F2]/80 hover:scale-105 active:scale-95 border border-transparent rounded-full px-4 py-2 w-fit hover:shadow-lg">
                   <Facebook className="w-4 h-4" />
                   <span>Facebook</span>
                 </a>

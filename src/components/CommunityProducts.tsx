@@ -82,7 +82,8 @@ export function CommunityProducts() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 + 0.2 }}
-            className="group relative overflow-hidden rounded-[24px] bg-white shadow-sm border border-theme-border flex flex-col h-full hover:shadow-md transition-shadow"
+            whileHover={{ y: -6, scale: 1.02 }}
+            className="group relative overflow-hidden rounded-[24px] bg-white shadow-sm border border-theme-border flex flex-col h-full hover:shadow-xl hover:border-theme-primary transition-all cursor-pointer"
           >
             <div className="h-[220px] w-full overflow-hidden relative">
               <img 

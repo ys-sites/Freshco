@@ -32,7 +32,7 @@ export function Boucherie() {
              window.history.pushState({}, '', '/boucherie-prix');
              window.dispatchEvent(new Event('popstate'));
            }}
-           className="mt-6 sm:mt-8 bg-theme-primary text-white font-bold py-3.5 px-6 rounded-[12px] inline-flex items-center gap-2 hover:bg-[#1f4a18] transition-colors w-full sm:w-auto justify-center"
+           className="mt-6 sm:mt-8 bg-theme-primary text-white font-bold py-3.5 px-6 rounded-[12px] inline-flex items-center gap-2 hover:bg-[#1f4a18] hover:scale-105 active:scale-95 hover:shadow-lg transition-all duration-300 w-full sm:w-auto justify-center"
          >
            {isFr ? 'Voir nos prix détaillés' : 'View our detailed prices'} <ChevronRight className="w-5 h-5"/>
          </a>

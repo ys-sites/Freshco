@@ -19,11 +19,11 @@ export function Produce() {
              : "Bring the authentic flavors of home directly to your kitchen. We source the freshest exotic fruits and rare vegetables that are essential to South Asian, African, and Caribbean cuisines."}
          </p>
          <div className="flex flex-wrap gap-2 text-[13px] font-bold text-theme-primary">
-           <span className="bg-theme-surface border border-theme-border px-3 py-1.5 rounded-full">{isFr ? 'Aubergines Asiatiques' : 'Asian Eggplants'}</span>
-           <span className="bg-theme-surface border border-theme-border px-3 py-1.5 rounded-full">{isFr ? 'Gombo' : 'Okra'}</span>
-           <span className="bg-theme-surface border border-theme-border px-3 py-1.5 rounded-full">{isFr ? 'Mangues Fraîches' : 'Fresh Mangoes'}</span>
-           <span className="bg-theme-surface border border-theme-border px-3 py-1.5 rounded-full">Plantains</span>
-           <span className="bg-theme-surface border border-theme-border px-3 py-1.5 rounded-full">{isFr ? 'Manioc' : 'Cassava'}</span>
+           <span className="bg-theme-surface border border-theme-border px-3 py-1.5 rounded-full hover:scale-105 transition-transform cursor-pointer">{isFr ? 'Aubergines Asiatiques' : 'Asian Eggplants'}</span>
+           <span className="bg-theme-surface border border-theme-border px-3 py-1.5 rounded-full hover:scale-105 transition-transform cursor-pointer">{isFr ? 'Gombo' : 'Okra'}</span>
+           <span className="bg-theme-surface border border-theme-border px-3 py-1.5 rounded-full hover:scale-105 transition-transform cursor-pointer">{isFr ? 'Mangues Fraîches' : 'Fresh Mangoes'}</span>
+           <span className="bg-theme-surface border border-theme-border px-3 py-1.5 rounded-full hover:scale-105 transition-transform cursor-pointer">Plantains</span>
+           <span className="bg-theme-surface border border-theme-border px-3 py-1.5 rounded-full hover:scale-105 transition-transform cursor-pointer">{isFr ? 'Manioc' : 'Cassava'}</span>
          </div>
        </div>
        

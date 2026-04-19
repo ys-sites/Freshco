@@ -20,7 +20,7 @@ export function Navbar() {
           </button>
           
           <a href="#" className="flex items-center gap-2">
-            <div className="flex items-center gap-2 sm:gap-3 text-[22px] sm:text-2xl font-extrabold tracking-tight text-theme-primary uppercase whitespace-nowrap">
+            <div className="flex items-center gap-2 sm:gap-3 text-[22px] sm:text-2xl font-extrabold tracking-tight text-theme-primary uppercase whitespace-nowrap hover:scale-105 active:scale-95 transition-transform cursor-pointer">
               <img src="/logo_cropped.png" alt="Marché Freshco Logo" className="w-10 h-10 md:w-14 md:h-14 object-contain flex-shrink-0 drop-shadow-sm" />
               <span className="pt-1">Marché Freshco</span>
             </div>
@@ -52,7 +52,7 @@ export function Navbar() {
             </button>
           </div>
 
-          <a href="tel:4389697966" className="hidden sm:flex h-10 w-10 items-center justify-center rounded-full bg-theme-surface text-theme-primary hover:bg-theme-border transition-colors">
+          <a href="tel:4389697966" className="hidden sm:flex h-10 w-10 items-center justify-center rounded-full bg-theme-surface text-theme-primary hover:bg-theme-border hover:scale-110 active:scale-95 transition-all">
             <Phone className="h-5 w-5" />
           </a>
         </div>

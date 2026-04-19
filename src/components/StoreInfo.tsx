@@ -70,7 +70,7 @@ export function StoreInfo() {
       </div>
       
       {/* Button */}
-      <a href="https://www.google.com/maps/dir/?api=1&destination=9549+Boul+Gouin+O,+Pierrefonds,+QC+H8Y+1R2" target="_blank" rel="noopener noreferrer" className="w-full mt-3 md:mt-4 bg-transparent border-2 border-theme-border text-theme-text font-bold py-2 md:py-2 px-4 rounded-[10px] text-[12px] md:text-[13px] hover:border-theme-primary hover:text-theme-primary transition-colors flex justify-center items-center gap-2">
+      <a href="https://www.google.com/maps/dir/?api=1&destination=9549+Boul+Gouin+O,+Pierrefonds,+QC+H8Y+1R2" target="_blank" rel="noopener noreferrer" className="w-full mt-3 md:mt-4 bg-transparent border-2 border-theme-border text-theme-text font-bold py-2 md:py-2 px-4 rounded-[10px] text-[12px] md:text-[13px] hover:border-theme-primary hover:text-theme-primary hover:scale-[1.03] active:scale-[0.98] hover:shadow-sm transition-all flex justify-center items-center gap-2">
         {isFr ? "Obtenir l'itinéraire" : "Get Directions"}
       </a>
     </section>
