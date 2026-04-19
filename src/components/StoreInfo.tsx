@@ -73,46 +73,56 @@ export function StoreInfo() {
         </motion.a>
 
         {/* Instagram */}
-        <motion.a
-          href="https://www.instagram.com/marche_freshco/"
-          target="_blank"
-          rel="noopener noreferrer"
+        <motion.div
           className="flex gap-2.5 md:gap-3 items-start group cursor-pointer pb-2 relative z-10"
           whileHover={{ x: 4, transition: SPRING }}
           whileTap={TAP}
         >
-          <motion.div
-            className="bg-[#E1306C]/10 text-[#E1306C] p-2 rounded-[10px] md:rounded-xl group-hover:bg-gradient-to-tr group-hover:from-[#F56040] group-hover:to-[#833AB4] group-hover:text-white transition-all"
-            whileHover={{ scale: 1.25, rotate: 8, transition: SPRING }}
+          <a
+            href="https://www.instagram.com/marche_freshco/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contents"
+            onClick={(e) => { e.stopPropagation(); window.open('https://www.instagram.com/marche_freshco/', '_blank', 'noopener,noreferrer'); e.preventDefault(); }}
           >
-            <Instagram className="w-3.5 h-3.5 md:w-4 md:h-4"/>
-          </motion.div>
-          <div className="pt-0.5">
-            <div className="text-[12px] md:text-[13px] font-bold text-theme-text mb-0.5">{isFr ? "Suivez-nous sur Instagram" : "Follow on Instagram"}</div>
-            <div className="text-[11px] md:text-[12px] text-theme-muted font-medium">@marche_freshco</div>
-          </div>
-        </motion.a>
+            <motion.div
+              className="bg-[#E1306C]/10 text-[#E1306C] p-2 rounded-[10px] md:rounded-xl group-hover:bg-gradient-to-tr group-hover:from-[#F56040] group-hover:to-[#833AB4] group-hover:text-white transition-all flex-shrink-0"
+              whileHover={{ scale: 1.25, rotate: 8, transition: SPRING }}
+            >
+              <Instagram className="w-3.5 h-3.5 md:w-4 md:h-4"/>
+            </motion.div>
+            <div className="pt-0.5">
+              <div className="text-[12px] md:text-[13px] font-bold text-theme-text mb-0.5">{isFr ? "Suivez-nous sur Instagram" : "Follow on Instagram"}</div>
+              <div className="text-[11px] md:text-[12px] text-theme-muted font-medium">@marche_freshco</div>
+            </div>
+          </a>
+        </motion.div>
 
         {/* Facebook */}
-        <motion.a
-          href="https://www.facebook.com/profile.php?id=61576117831213"
-          target="_blank"
-          rel="noopener noreferrer"
+        <motion.div
           className="flex gap-2.5 md:gap-3 items-start group cursor-pointer pb-1 relative z-10"
           whileHover={{ x: 4, transition: SPRING }}
           whileTap={TAP}
         >
-          <motion.div
-            className="bg-[#1877F2]/10 text-[#1877F2] p-2 rounded-[10px] md:rounded-xl group-hover:bg-[#1877F2] group-hover:text-white transition-all"
-            whileHover={{ scale: 1.25, rotate: -8, transition: SPRING }}
+          <a
+            href="https://www.facebook.com/profile.php?id=61576117831213"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contents"
+            onClick={(e) => { e.stopPropagation(); window.open('https://www.facebook.com/profile.php?id=61576117831213', '_blank', 'noopener,noreferrer'); e.preventDefault(); }}
           >
-            <Facebook className="w-3.5 h-3.5 md:w-4 md:h-4"/>
-          </motion.div>
-          <div className="pt-0.5">
-            <div className="text-[12px] md:text-[13px] font-bold text-theme-text mb-0.5">{isFr ? "Aimez notre page Facebook" : "Like us on Facebook"}</div>
-            <div className="text-[11px] md:text-[12px] text-theme-muted font-medium">Marché Freshco</div>
-          </div>
-        </motion.a>
+            <motion.div
+              className="bg-[#1877F2]/10 text-[#1877F2] p-2 rounded-[10px] md:rounded-xl group-hover:bg-[#1877F2] group-hover:text-white transition-all flex-shrink-0"
+              whileHover={{ scale: 1.25, rotate: -8, transition: SPRING }}
+            >
+              <Facebook className="w-3.5 h-3.5 md:w-4 md:h-4"/>
+            </motion.div>
+            <div className="pt-0.5">
+              <div className="text-[12px] md:text-[13px] font-bold text-theme-text mb-0.5">{isFr ? "Aimez notre page Facebook" : "Like us on Facebook"}</div>
+              <div className="text-[11px] md:text-[12px] text-theme-muted font-medium">Marché Freshco</div>
+            </div>
+          </a>
+        </motion.div>
       </div>
       
       {/* Button */}
