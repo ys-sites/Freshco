@@ -17,19 +17,22 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-theme-bg font-sans text-theme-text selection:bg-theme-accent selection:text-black flex flex-col overflow-x-hidden relative">
       
-      {/* Floating Side Vegetables/Leaves Decorations (Visible only on Laptop/Desktop) */}
-      <div className="hidden xl:block pointer-events-none fixed top-[12%] left-0 w-[200px] 2xl:w-[260px] z-0 mix-blend-multiply opacity-90 transform -translate-x-[50%] hover:-translate-x-[45%] transition-transform duration-700">
-        <img src="/cabage_bg.png" alt="" className="w-full h-auto object-contain" />
+      {/* Floating Side Decorations (Visible only on Laptop/Desktop) */}
+      <div className="hidden xl:block pointer-events-none fixed top-[10%] left-0 w-[180px] 2xl:w-[240px] z-0 mix-blend-multiply opacity-90 transform -translate-x-[45%] hover:-translate-x-[40%] transition-transform duration-700">
+        <img src="/1.png" alt="" className="w-full h-auto object-contain" />
       </div>
-      <div className="hidden xl:block pointer-events-none fixed top-[65%] left-0 w-[180px] 2xl:w-[240px] z-0 mix-blend-multiply opacity-90 transform -translate-x-[45%] rotate-12 transition-transform duration-700">
-        <img src="/carrot_bg.png" alt="" className="w-full h-auto object-contain" />
+      <div className="hidden xl:block pointer-events-none fixed top-[45%] left-0 w-[160px] 2xl:w-[220px] z-0 mix-blend-multiply opacity-90 transform -translate-x-[45%] rotate-6 hover:-translate-x-[40%] transition-transform duration-700">
+        <img src="/2.png" alt="" className="w-full h-auto object-contain" />
+      </div>
+      <div className="hidden xl:block pointer-events-none fixed top-[80%] left-0 w-[160px] 2xl:w-[220px] z-0 mix-blend-multiply opacity-90 transform -translate-x-[45%] -rotate-6 hover:-translate-x-[40%] transition-transform duration-700">
+        <img src="/3.png" alt="" className="w-full h-auto object-contain" />
       </div>
       
-      <div className="hidden xl:block pointer-events-none fixed top-[28%] right-0 w-[200px] 2xl:w-[260px] z-0 mix-blend-multiply opacity-90 transform translate-x-[45%] -rotate-12 transition-transform duration-700">
-        <img src="/green_bg.png" alt="" className="w-full h-auto object-contain" />
+      <div className="hidden xl:block pointer-events-none fixed top-[25%] right-0 w-[180px] 2xl:w-[240px] z-0 mix-blend-multiply opacity-90 transform translate-x-[40%] -rotate-12 hover:translate-x-[35%] transition-transform duration-700">
+        <img src="/4.png" alt="" className="w-full h-auto object-contain" />
       </div>
-      <div className="hidden xl:block pointer-events-none fixed top-[80%] right-0 w-[180px] 2xl:w-[220px] z-0 mix-blend-multiply opacity-90 transform translate-x-[40%] rotate-6 transition-transform duration-700">
-        <img src="/tomato_bg.png" alt="" className="w-full h-auto object-contain" />
+      <div className="hidden xl:block pointer-events-none fixed top-[65%] right-0 w-[180px] 2xl:w-[240px] z-0 mix-blend-multiply opacity-90 transform translate-x-[40%] rotate-6 hover:translate-x-[35%] transition-transform duration-700">
+        <img src="/5.png" alt="" className="w-full h-auto object-contain" />
       </div>
 
       {/* Main Content Area */}
