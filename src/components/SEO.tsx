@@ -29,7 +29,7 @@ export function SEO({ currentPath }: { currentPath: string }) {
       : 'Marché Freshco | Halal Grocery & Multicultural Products Montreal';
 
     let description = isFr
-      ? 'Marché Freshco à Pierrefonds, Montréal : boucherie 100% Halal Zabiha, viandes fraîches, fruits exotiques, épices africaines et produits d'Asie du Sud. Ouvert 7j/7, 8h–21h.'
+      ? `Marché Freshco à Pierrefonds, Montréal : boucherie 100% Halal Zabiha, viandes fraîches, fruits exotiques, épices africaines et produits d'Asie du Sud. Ouvert 7j/7, 8h–21h.`
       : 'Marché Freshco in Pierrefonds, Montreal: 100% Zabiha Halal butcher, fresh meats & exotic produce, African staples, South Asian spices. Open 7 days, 8 AM–9 PM.';
 
     if (isBoucheriePage) {
@@ -70,7 +70,7 @@ export function SEO({ currentPath }: { currentPath: string }) {
       name: 'Marché Freshco',
       alternateName: ['Marche Freshco', 'Freshco Pierrefonds'],
       description: isFr
-        ? 'Épicerie multiculturelle Halal à Pierrefonds, Montréal. Boucherie 100% Zabiha, fruits exotiques, épices africaines et produits d'Asie du Sud.'
+        ? `Épicerie multiculturelle Halal à Pierrefonds, Montréal. Boucherie 100% Zabiha, fruits exotiques, épices africaines et produits d'Asie du Sud.`
         : 'Multicultural Halal grocery in Pierrefonds, Montreal. 100% Zabiha butcher, exotic produce, African staples, and South Asian spices.',
       url: 'https://marchefreshco.com',
       logo: 'https://marchefreshco.com/logo_cropped.png',
@@ -203,7 +203,7 @@ export function SEO({ currentPath }: { currentPath: string }) {
         { '@type': 'ListItem', position: 1, name: isFr ? 'Boucherie Halal' : 'Halal Butcher', url: 'https://marchefreshco.com/#halal' },
         { '@type': 'ListItem', position: 2, name: isFr ? 'Fruits & Légumes Exotiques' : 'Exotic Fruits & Vegetables', url: 'https://marchefreshco.com/#produce' },
         { '@type': 'ListItem', position: 3, name: isFr ? 'Spécialités Africaines' : 'African Specialties', url: 'https://marchefreshco.com/#world' },
-        { '@type': 'ListItem', position: 4, name: isFr ? 'Saveurs d\'Asie du Sud' : 'South Asian Flavors', url: 'https://marchefreshco.com/#world' },
+        { '@type': 'ListItem', position: 4, name: isFr ? `Saveurs d'Asie du Sud` : 'South Asian Flavors', url: 'https://marchefreshco.com/#world' },
         { '@type': 'ListItem', position: 5, name: isFr ? 'Produits du Moyen-Orient' : 'Middle Eastern Goods', url: 'https://marchefreshco.com/#world' },
         { '@type': 'ListItem', position: 6, name: isFr ? 'Nos Arrivages / Circulaire' : 'Weekly Deals / Flyer', url: 'https://marchefreshco.com/#deals' },
       ],
