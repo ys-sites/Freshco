@@ -13,6 +13,7 @@ export function WeeklyDeals() {
     { id: 5, name: isFr ? 'Biscuits' : 'Cookies', price: '$0.99', src: '/cookie.png' },
     { id: 6, name: isFr ? 'Clémentines' : 'Clementines', price: '$1.99', src: '/clementine.jpg' },
     { id: 7, name: isFr ? 'Mangues Ataulfo' : 'Ataulfo Mangoes', price: '2 / $2.50', src: '/mango.jpg' },
+    { id: 8, name: isFr ? 'Pommes Gala' : 'Gala Apples', price: '$2.47/lb', src: '/apple.jpg' },
   ];
 
   return (
