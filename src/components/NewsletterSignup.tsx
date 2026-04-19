@@ -91,28 +91,11 @@ export function NewsletterSignup() {
             </div>
             
             <button 
-              type="submit"
-              disabled={status === 'loading' || status === 'success'}
-              className="w-full h-[42px] md:h-[48px] bg-theme-accent hover:bg-[#EDA876] disabled:bg-theme-accent/80 text-[#1A1A1A] font-bold text-[13px] md:text-[14px] rounded-[10px] flex items-center justify-center gap-1.5 transition-colors shadow-md disabled:cursor-not-allowed"
+              type="button"
+              disabled={true}
+              className="w-full h-[42px] md:h-[48px] bg-theme-accent/60 text-[#1A1A1A] font-bold text-[13px] md:text-[14px] rounded-[10px] flex items-center justify-center gap-1.5 transition-colors shadow-sm cursor-not-allowed"
             >
-              {status === 'loading' ? (
-                <Loader2 className="w-4 h-4 animate-spin" />
-              ) : status === 'success' ? (
-                <>
-                  <CheckCircle className="w-4 h-4 text-green-700" />
-                  {isFr ? "Abonné avec succès!" : "Successfully subscribed!"}
-                </>
-              ) : status === 'error' ? (
-                <>
-                  <AlertCircle className="w-4 h-4 text-red-600" />
-                  {isFr ? "Erreur, réessayez" : "Error, please try again"}
-                </>
-              ) : (
-                <>
-                  {isFr ? "S'abonner Maintenant" : "Subscribe Now"}
-                  <ArrowRight className="w-3.5 h-3.5 md:w-4 md:h-4" />
-                </>
-              )}
+              {isFr ? "Bientôt intégré" : "Soon to be integrated"}
             </button>
             <p className="text-center text-[9px] md:text-[10px] text-white/50 mt-0 md:mt-0.5 uppercase tracking-wider font-medium">
               {isFr ? "Pas de spam. Promis." : "No spam. We promise."}

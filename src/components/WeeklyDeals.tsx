@@ -6,14 +6,13 @@ export function WeeklyDeals() {
   const isFr = lang === 'fr';
 
   const weeklyDeals = [
-    { id: 1, name: isFr ? 'Bananes Plantains' : 'Green Plantains', price: '$4.99/lb', src: '/plantains.jpg' },
-    { id: 2, name: isFr ? 'Feuilles de Thé Noir' : 'Black Tea Leaves', price: '$6.99', src: '/tea.jpg' },
-    { id: 3, name: isFr ? 'Côtes de Bœuf Halal' : 'Halal Beef Ribs', price: '$15.50/lb', src: '/ribs.jpg' },
-    { id: 4, name: isFr ? 'Dattes Medjool' : 'Medjool Dates', price: '$19.99', src: '/dates.jpg' },
-    { id: 5, name: isFr ? 'Cardamome Verte (100g)' : 'Oh Natural Green Cardamom', price: '$8.50', src: '/cardamom.jpg' },
-    { id: 6, name: isFr ? 'Ghee Desi Pur' : 'Pure Desi Ghee', price: '$11.99', src: '/ghee.jpg' },
-    { id: 7, name: isFr ? 'Safran Premium (1g)' : 'Qure Saffron (1g)', price: '$12.99', src: '/saffron.jpg' },
-    { id: 8, name: isFr ? 'Poudre de Curcuma' : 'Organic Turmeric Powder', price: '$5.49', src: '/turmeric.jpg' },
+    { id: 1, name: isFr ? 'Bananes Plantains' : 'Green Plantains', price: '$1.49/lb', src: '/plantains.jpg' },
+    { id: 2, name: isFr ? 'Bananes' : 'Bananas', price: '$0.57/lb', src: '/banana.jpg' },
+    { id: 3, name: isFr ? 'Poires Bosc' : 'Bosc Pears', price: '$0.99/lb', src: '/poire-bosc.jpg' },
+    { id: 4, name: isFr ? 'Spécial Ouverture (achat 200$+)' : 'Opening Special (spend $200+)', price: '$8.99', src: '/opening.png' },
+    { id: 5, name: isFr ? 'Biscuits' : 'Cookies', price: '$0.99', src: '/cookie.png' },
+    { id: 6, name: isFr ? 'Clémentines' : 'Clementines', price: '$1.99', src: '/clementine.jpg' },
+    { id: 7, name: isFr ? 'Mangues Ataulfo' : 'Ataulfo Mangoes', price: '2 / $2.50', src: '/mango.jpg' },
   ];
 
   return (
