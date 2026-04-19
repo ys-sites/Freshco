@@ -17,7 +17,7 @@ const categories = [
   {
     nameFr: 'VEAU', nameEn: 'VEAL',
     items: [
-      { nameFr: 'Épaule de veau', nameEn: 'Veal Shoulder', price: '$4.55/lb' },
+      { nameFr: 'Épaule de veau', nameEn: 'Veal Shoulder', price: '$9.55/lb' },
       { nameFr: 'Veau sans os', nameEn: 'Boneless Veal', price: '$12.99/lb' },
       { nameFr: 'Nihari de veau avec os', nameEn: 'Veal Nihari with bone', price: '$6.99/lb' },
       { nameFr: 'Nihari de veau sans os', nameEn: 'Boneless Veal Nihari', price: '$12.99/lb' },
@@ -28,10 +28,10 @@ const categories = [
     items: [
       { nameFr: 'Agneau entier', nameEn: 'Whole Lamb', price: '$15.99/lb' },
       { nameFr: 'Épaule d\'agneau', nameEn: 'Lamb Shoulder', price: '$15.99/lb' },
-      { nameFr: 'Gigot d\'agneau', nameEn: 'Lamb Leg', price: '$15.99/lb' },
+      { nameFr: 'Gigot d\'agneau', nameEn: 'Lamb Leg', price: '$17.99/lb' },
       { nameFr: 'Pieds d\'agneau', nameEn: 'Lamb Paya', price: '$5.99/lb' },
-      { nameFr: 'Chèvre entière', nameEn: 'Whole Goat', price: '$5.99/lb' },
-      { nameFr: 'Épaule de chèvre', nameEn: 'Goat Shoulder', price: '$5.99/lb' },
+      { nameFr: 'Chèvre entière', nameEn: 'Whole Goat', price: '$15.99/lb' },
+      { nameFr: 'Épaule de chèvre', nameEn: 'Goat Shoulder', price: '$15.99/lb' },
       { nameFr: 'Gigot de chèvre', nameEn: 'Goat Leg', price: '$17.99/lb' },
       { nameFr: 'Foie de chèvre', nameEn: 'Goat Liver', price: '$15.99/lb' },
     ]
@@ -41,7 +41,7 @@ const categories = [
     items: [
       { nameFr: 'Poulet dur', nameEn: 'Hard Chicken', price: '$7.99/lb' },
       { nameFr: 'Poulet haché', nameEn: 'Chicken Mince', price: '$7.99/lb' },
-      { nameFr: 'Pattes de poulet', nameEn: 'Chicken Feet', price: '$4.45/lb' },
+      { nameFr: 'Pattes de poulet', nameEn: 'Chicken Feet', price: '$4.15/lb' },
       { nameFr: 'Poulet entier', nameEn: 'Whole Chicken', price: '$3.49/lb' },
       { nameFr: 'Cuisses de poulet avec os', nameEn: 'Chicken Legs with bone', price: '$4.29/lb' },
       { nameFr: 'Pilons de poulet avec os', nameEn: 'Chicken Drumsticks with bone', price: '$4.29/lb' },
@@ -55,7 +55,7 @@ const categories = [
     nameFr: 'MORCEAUX', nameEn: 'PIECES',
     items: [
       { nameFr: 'Foie de poulet', nameEn: 'Chicken Liver', price: '$3.99/lb' },
-      { nameFr: 'Gésier de poulet', nameEn: 'Chicken Gizzard', price: '$0.99/lb' },
+      { nameFr: 'Gésier de poulet', nameEn: 'Chicken Gizzard', price: '$3.99/lb' },
     ]
   }
 ];
