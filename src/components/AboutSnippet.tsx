@@ -51,7 +51,7 @@ export function AboutSnippet() {
        >
          <video
            ref={videoRef}
-           src="/ig.mp4"
+           src="/video.mp4"
            poster="/thumbnail.jpg"
            preload="metadata"
            playsInline
