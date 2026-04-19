@@ -1,6 +1,7 @@
 import { useLanguage } from '../lib/LanguageContext';
 import { motion } from 'motion/react';
 import { ArrowLeft } from 'lucide-react';
+import { useEffect } from 'react';
 
 const categories = [
   {
@@ -63,6 +64,10 @@ const categories = [
 export default function BoucheriePricesPage() {
   const { lang, setLang } = useLanguage();
   const isFr = lang === 'fr';
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, []);
 
   return (
     <motion.div 
