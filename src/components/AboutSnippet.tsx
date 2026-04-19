@@ -16,7 +16,7 @@ export function AboutSnippet() {
   };
 
   return (
-    <section id="about" className="relative overflow-hidden bg-gradient-to-br from-[#2D5A27] to-[#122b0f] border border-theme-border rounded-[24px] p-8 md:p-10 shadow-sleek flex flex-col md:flex-row gap-8 items-center w-full min-h-[400px]">
+    <section id="about" className="relative overflow-hidden bg-gradient-to-br from-[#2D5A27] to-[#122b0f] border border-theme-border rounded-[24px] p-8 md:p-12 shadow-sleek flex flex-col items-center justify-center w-full min-h-[300px] text-center">
        
        {/* Decorative Background Elements */}
        <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-[#3E6F38]/40 blur-2xl pointer-events-none"></div>
@@ -31,7 +31,7 @@ export function AboutSnippet() {
        </div>
        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none z-0"></div>
 
-       <div className="flex-1 z-10 w-full text-center md:text-left">
+       <div className="flex-1 z-10 w-full max-w-3xl">
          <div className="inline-block rounded-full bg-white/10 backdrop-blur-md px-4 py-1.5 text-[11px] font-bold text-white uppercase tracking-wider mb-5">
            {isFr ? 'Notre Mission' : 'Our Mission'}
          </div>
@@ -46,6 +46,7 @@ export function AboutSnippet() {
 
        </div>
        
+       {/* Video removed for the moment
        <div 
          className="w-[220px] md:w-[260px] lg:w-[280px] aspect-[9/16] rounded-[24px] overflow-hidden relative shadow-2xl flex-shrink-0 z-10 border-[3px] border-white/20 group block mx-auto md:mx-0 bg-black"
        >
@@ -66,22 +67,18 @@ export function AboutSnippet() {
              aria-label="Play video"
              role="button"
            >
-             {/* Top and Bottom Dark Gradients for UI readability */}
              <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/70 pointer-events-none"></div>
 
-             {/* IG Overlay Logo */}
              <div className="absolute top-4 left-4 rounded-full bg-theme-surface text-theme-primary shadow-lg border border-theme-border/50 pointer-events-none p-2.5 flex items-center justify-center">
                <Instagram className="w-5 h-5" />
              </div>
 
-             {/* Animated Play Button */}
              <div 
                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[64px] h-[64px] bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/40 shadow-[0_4px_30px_rgba(0,0,0,0.3)] group-hover:bg-white/30 group-hover:scale-110 transition-all duration-300 flex-shrink-0"
              >
                <Play className="w-8 h-8 text-white ml-1 fill-white" />
              </div>
 
-             {/* Bottom Text matching screenshot style */}
              <div className="absolute bottom-6 left-0 right-0 text-center px-4 pointer-events-none">
                 <span className="text-white font-bold text-[18px] md:text-[20px] tracking-wide uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
                   MÁRCHE FRESHCO
@@ -90,6 +87,7 @@ export function AboutSnippet() {
            </div>
          )}
        </div>
+       */}
     </section>
   )
 }
