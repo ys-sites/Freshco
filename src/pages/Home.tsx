@@ -17,12 +17,19 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-theme-bg font-sans text-theme-text selection:bg-theme-accent selection:text-black flex flex-col overflow-x-hidden relative">
       
-      {/* Floating Side Decorations (Visible on Large Screens) */}
-      <div className="hidden min-[1300px]:block pointer-events-none fixed top-[18%] left-0 w-[220px] 2xl:w-[300px] z-0 mix-blend-multiply opacity-90 transform -translate-x-[45%]">
-        <img src="/bg_leaf_left.png" alt="" className="w-full h-auto object-contain" />
+      {/* Floating Side Vegetables/Leaves Decorations (Visible only on Laptop/Desktop) */}
+      <div className="hidden xl:block pointer-events-none fixed top-[12%] left-0 w-[200px] 2xl:w-[260px] z-0 mix-blend-multiply opacity-90 transform -translate-x-[50%] hover:-translate-x-[45%] transition-transform duration-700">
+        <img src="/cabage_bg.png" alt="" className="w-full h-auto object-contain" />
       </div>
-      <div className="hidden min-[1300px]:block pointer-events-none fixed top-[45%] right-0 w-[240px] 2xl:w-[320px] z-0 mix-blend-multiply opacity-90 transform translate-x-[40%]">
-        <img src="/bg_herbs_right.png" alt="" className="w-full h-auto object-contain" />
+      <div className="hidden xl:block pointer-events-none fixed top-[65%] left-0 w-[180px] 2xl:w-[240px] z-0 mix-blend-multiply opacity-90 transform -translate-x-[45%] rotate-12 transition-transform duration-700">
+        <img src="/carrot_bg.png" alt="" className="w-full h-auto object-contain" />
+      </div>
+      
+      <div className="hidden xl:block pointer-events-none fixed top-[28%] right-0 w-[200px] 2xl:w-[260px] z-0 mix-blend-multiply opacity-90 transform translate-x-[45%] -rotate-12 transition-transform duration-700">
+        <img src="/green_bg.png" alt="" className="w-full h-auto object-contain" />
+      </div>
+      <div className="hidden xl:block pointer-events-none fixed top-[80%] right-0 w-[180px] 2xl:w-[220px] z-0 mix-blend-multiply opacity-90 transform translate-x-[40%] rotate-6 transition-transform duration-700">
+        <img src="/tomato_bg.png" alt="" className="w-full h-auto object-contain" />
       </div>
 
       {/* Main Content Area */}
