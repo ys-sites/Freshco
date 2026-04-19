@@ -35,10 +35,10 @@ export function AboutSnippet() {
          <div className="inline-block rounded-full bg-white/10 backdrop-blur-md px-4 py-1.5 text-[11px] font-bold text-white uppercase tracking-wider mb-5">
            {isFr ? 'Notre Mission' : 'Our Mission'}
          </div>
-         <h2 className="text-[28px] md:text-[32px] font-bold text-white leading-[1.2] mb-4">
+         <h2 className="text-[32px] md:text-[42px] font-bold text-white leading-[1.1] mb-6">
            {isFr ? 'Bâtir la communauté par l\'alimentation authentique.' : 'Building community through authentic food.'}
          </h2>
-         <p className="text-white/90 text-[15px] leading-relaxed mb-8 max-w-lg mx-auto md:mx-0">
+         <p className="text-white/90 text-base md:text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
            {isFr 
              ? "Marché Freshco a été fondé pour offrir à la diaspora montréalaise une destination unique et de confiance pour des viandes Halal de première qualité, des produits biologiques frais et des ingrédients rares d'Asie du Sud et d'Afrique."
              : "Marché Freshco was founded to provide the Montreal diaspora with a single, trusted destination for premium Halal meats, fresh organic produce, and hard-to-find ingredients from South Asia and Africa."}
