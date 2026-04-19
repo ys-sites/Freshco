@@ -6,6 +6,7 @@
 import { useEffect, useState } from 'react';
 import Home from './pages/Home';
 import BoucheriePricesPage from './pages/BoucheriePricesPage';
+import { SEO } from './components/SEO';
 
 export default function App() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
@@ -33,11 +34,10 @@ export default function App() {
     return () => clearTimeout(timer);
   }, [currentPath]);
 
-  // Return the correct page based on current route
-  if (currentPath === '/boucherie-prix') {
-    return <BoucheriePricesPage />;
-  }
-
-  // Default route
-  return <Home />;
+  return (
+    <>
+      <SEO currentPath={currentPath} />
+      {currentPath === '/boucherie-prix' ? <BoucheriePricesPage /> : <Home />}
+    </>
+  );
 }
