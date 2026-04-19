@@ -27,9 +27,9 @@ export function Footer() {
           
           {/* Left Column: Brand Bio */}
           <div className="flex flex-col gap-6 pr-0 lg:pr-12">
-            <div className="flex items-center gap-3 text-2xl font-extrabold tracking-tight text-white mb-4">
-              <img src="/logo.png" alt="Márche Freshco Logo" className="w-[44px] h-[44px] object-contain flex-shrink-0 drop-shadow-lg" />
-              <span className="font-serif text-[26px]">Márche Freshco</span>
+            <div className="flex items-center gap-0 sm:gap-1 text-2xl font-extrabold tracking-tight text-white mb-4">
+              <img src="/logo.png" alt="Marché Freshco Logo" className="w-[90px] h-[90px] md:w-[130px] md:h-[130px] object-contain flex-shrink-0 drop-shadow-lg -ml-4 scale-[1.2]" />
+              <span className="font-serif text-[26px]">Marché Freshco</span>
             </div>
             
             <p className="text-white/90 text-[15px] leading-[1.8] max-w-[340px]">
@@ -79,7 +79,7 @@ export function Footer() {
         
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center gap-4 text-[13px] text-white/60">
-          <p>&copy; {new Date().getFullYear()} Márche Freshco. {isFr ? "Tous droits réservés." : "All rights reserved."}</p>
+          <p>&copy; {new Date().getFullYear()} Marché Freshco. {isFr ? "Tous droits réservés." : "All rights reserved."}</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">{isFr ? "Politique de confidentialité" : "Privacy Policy"}</a>
             <a href="#" className="hover:text-white transition-colors">{isFr ? "Conditions d'utilisation" : "Terms of Service"}</a>

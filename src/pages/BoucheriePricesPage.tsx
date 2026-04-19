@@ -72,7 +72,7 @@ export default function BoucheriePricesPage() {
       className="min-h-screen bg-theme-bg flex flex-col"
     >
       <header className="sticky top-0 z-50 w-full border-b border-theme-border bg-white shadow-sm">
-        <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
+        <div className="mx-auto flex min-h-[80px] py-3 max-w-7xl items-center justify-between px-6 lg:px-10">
           <a href="/" onClick={(e) => {
             e.preventDefault();
             window.history.pushState({}, '', '/');
@@ -83,9 +83,9 @@ export default function BoucheriePricesPage() {
             </div>
             <span className="font-bold hidden sm:block uppercase tracking-wide text-sm">{isFr ? 'Retour à l\'accueil' : 'Back to Home'}</span>
           </a>
-          <div className="flex items-center gap-2 text-[22px] sm:text-2xl font-extrabold tracking-tight text-theme-primary uppercase whitespace-nowrap">
-            <img src="/logo.png" alt="Márche Freshco Logo" className="w-8 h-8 md:w-10 md:h-10 object-contain flex-shrink-0 drop-shadow-sm" />
-            <span>Márche Freshco</span>
+          <div className="flex items-center gap-1 sm:gap-2 text-[22px] sm:text-2xl font-extrabold tracking-tight text-theme-primary uppercase whitespace-nowrap">
+            <img src="/logo.png" alt="Marché Freshco Logo" className="w-[72px] h-[72px] md:w-[110px] md:h-[110px] object-contain flex-shrink-0 drop-shadow-sm -ml-2 scale-[1.1] md:scale-[1.2]" />
+            <span>Marché Freshco</span>
           </div>
           <div className="flex items-center gap-2 text-[15px] font-bold">
             <button onClick={() => setLang('en')} className={lang === 'en' ? 'text-theme-text' : 'text-theme-muted hover:text-theme-text transition-colors'}>EN</button>

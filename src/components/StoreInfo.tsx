@@ -64,7 +64,7 @@ export function StoreInfo() {
           </div>
           <div className="pt-0.5">
             <div className="text-[12px] md:text-[13px] font-bold text-theme-text mb-0.5">{isFr ? "Aimez notre page Facebook" : "Like us on Facebook"}</div>
-            <div className="text-[11px] md:text-[12px] text-theme-muted font-medium">Márche Freshco</div>
+            <div className="text-[11px] md:text-[12px] text-theme-muted font-medium">Marché Freshco</div>
           </div>
         </a>
       </div>

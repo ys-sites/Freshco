@@ -12,7 +12,7 @@ export function Navbar() {
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className="sticky top-0 z-50 w-full border-b border-theme-border bg-white"
     >
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
+      <div className="mx-auto flex min-h-[80px] py-3 max-w-7xl items-center justify-between px-6 lg:px-10">
         <div className="flex items-center gap-2">
           {/* Mobile menu */}
           <button className="mr-2 lg:hidden text-theme-primary">
@@ -20,9 +20,9 @@ export function Navbar() {
           </button>
           
           <a href="#" className="flex items-center gap-2">
-            <div className="flex items-center gap-2 text-[22px] sm:text-2xl font-extrabold tracking-tight text-theme-primary uppercase whitespace-nowrap">
-              <img src="/logo.png" alt="Márche Freshco Logo" className="w-8 h-8 md:w-10 md:h-10 object-contain flex-shrink-0 drop-shadow-sm" />
-              <span>Márche Freshco</span>
+            <div className="flex items-center gap-1 sm:gap-2 text-[22px] sm:text-2xl font-extrabold tracking-tight text-theme-primary uppercase whitespace-nowrap">
+              <img src="/logo.png" alt="Marché Freshco Logo" className="w-[72px] h-[72px] md:w-[110px] md:h-[110px] object-contain flex-shrink-0 drop-shadow-sm -ml-2 scale-[1.1] md:scale-[1.2]" />
+              <span>Marché Freshco</span>
             </div>
           </a>
         </div>

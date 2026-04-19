@@ -12,18 +12,18 @@ export function SEO({ currentPath }: { currentPath: string }) {
     document.documentElement.lang = isFr ? 'fr-CA' : 'en-CA';
 
     // Construct titles based on route and language
-    let title = 'Márche Freshco | Épicerie Halal & Produits Multiculturels';
-    let description = 'Découvrez Márche Freshco à Pierrefonds. Boucherie 100% Halal Zabiha, produits asiatiques et fruits tropicaux. Fraîcheur garantie.';
+    let title = 'Marché Freshco | Épicerie Halal & Produits Multiculturels';
+    let description = 'Découvrez Marché Freshco à Pierrefonds. Boucherie 100% Halal Zabiha, produits asiatiques et fruits tropicaux. Fraîcheur garantie.';
     
     if (!isFr) {
-      title = 'Márche Freshco | Halal Grocery & Multicultural Products';
-      description = 'Discover Márche Freshco in Pierrefonds. 100% Zabiha Halal butcher, Asian products, and tropical fruits. Freshness guaranteed.';
+      title = 'Marché Freshco | Halal Grocery & Multicultural Products';
+      description = 'Discover Marché Freshco in Pierrefonds. 100% Zabiha Halal butcher, Asian products, and tropical fruits. Freshness guaranteed.';
     }
 
     if (isBoucheriePage) {
       title = isFr 
-        ? 'Prix de la Boucherie Halal | Márche Freshco Montréal' 
-        : 'Halal Butcher Prices | Márche Freshco Montreal';
+        ? 'Prix de la Boucherie Halal | Marché Freshco Montréal' 
+        : 'Halal Butcher Prices | Marché Freshco Montreal';
       description = isFr
         ? 'Consultez les prix complets de notre boucherie halal 100% Zabiha. Bœuf, veau, agneau, chèvre et volaille frais tous les jours.'
         : 'Check current prices for our 100% Zabiha halal butcher shop. Fresh beef, veal, lamb, goat, and poultry cut daily.';
