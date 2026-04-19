@@ -1,6 +1,6 @@
 import { Play, Instagram } from 'lucide-react';
 import { useLanguage } from '../lib/LanguageContext';
-import { useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 
 export function AboutSnippet() {
   const { lang } = useLanguage();
