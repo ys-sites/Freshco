@@ -65,10 +65,11 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Priority Sections: Weekly Flyers → Our Mission → World Products */}
+        <AboutSnippet />
+
+        {/* Priority Sections: Weekly Flyers → World Products */}
         <div className="flex flex-col gap-4 lg:gap-6 w-full">
           <WeeklyDeals />
-          <AboutSnippet />
           <CommunityProducts />
         </div>
 
