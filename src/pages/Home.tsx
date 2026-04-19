@@ -21,9 +21,7 @@ export default function Home() {
       <div className="hidden xl:block pointer-events-none fixed top-[10%] left-0 w-[180px] 2xl:w-[240px] z-0 mix-blend-multiply opacity-90 transform -translate-x-[45%] hover:-translate-x-[40%] transition-transform duration-700">
         <img src="/1.png" alt="" className="w-full h-auto object-contain" />
       </div>
-      <div className="hidden xl:block pointer-events-none fixed top-[45%] left-0 w-[160px] 2xl:w-[220px] z-0 mix-blend-multiply opacity-90 transform -translate-x-[45%] rotate-6 hover:-translate-x-[40%] transition-transform duration-700">
-        <img src="/2.png" alt="" className="w-full h-auto object-contain" />
-      </div>
+
       <div className="hidden xl:block pointer-events-none fixed top-[80%] left-0 w-[160px] 2xl:w-[220px] z-0 mix-blend-multiply opacity-90 transform -translate-x-[45%] -rotate-6 hover:-translate-x-[40%] transition-transform duration-700">
         <img src="/3.png" alt="" className="w-full h-auto object-contain" />
       </div>
@@ -31,9 +29,7 @@ export default function Home() {
       <div className="hidden xl:block pointer-events-none fixed top-[25%] right-0 w-[180px] 2xl:w-[240px] z-0 mix-blend-multiply opacity-90 transform translate-x-[40%] -rotate-12 hover:translate-x-[35%] transition-transform duration-700">
         <img src="/4.png" alt="" className="w-full h-auto object-contain" />
       </div>
-      <div className="hidden xl:block pointer-events-none fixed top-[65%] right-0 w-[180px] 2xl:w-[240px] z-0 mix-blend-multiply opacity-90 transform translate-x-[15%] rotate-6 hover:translate-x-[10%] transition-transform duration-700">
-        <img src="/5.png" alt="" className="w-full h-auto object-contain" />
-      </div>
+
 
       {/* Main Content Area */}
       <div className="relative z-10 flex flex-col min-h-screen border-b border-theme-border">
