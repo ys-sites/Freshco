@@ -16,7 +16,7 @@ export function FAQ() {
     ? [
         {
           question: "Où est situé Marché Saveurs ?",
-          answer: "Marché Saveurs est situé au 1234 Rue Sainte-Catherine Ouest, Montréal. Nous sommes facilement accessibles en voiture et en transport en commun au centre-ville de Montréal.",
+          answer: "Marché Saveurs est situé à Montréal. Nous sommes facilement accessibles en voiture et en transport en commun.",
         },
         {
           question: "Quels sont les horaires d'ouverture de Marché Saveurs ?",
@@ -46,7 +46,7 @@ export function FAQ() {
     : [
         {
           question: "Where is Marché Saveurs located?",
-          answer: "Marché Saveurs is located at 1234 Rue Sainte-Catherine Ouest, Montreal. We are conveniently accessible by car and public transit in downtown Montreal.",
+          answer: "Marché Saveurs is located in Montreal. We are conveniently accessible by car and public transit.",
         },
         {
           question: "What are the hours of operation at Marché Saveurs?",

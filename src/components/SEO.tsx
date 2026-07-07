@@ -37,8 +37,8 @@ export function SEO({ currentPath }: { currentPath: string }) {
         ? 'Prix Boucherie Halal | Marché Saveurs Montréal'
         : 'Halal Butcher Prices | Marché Saveurs Montreal';
       description = isFr
-        ? 'Consultez la liste de prix complète de notre boucherie Halal Zabiha. Bœuf, veau, agneau, chèvre et volaille découpés chaque jour au 1234 Rue Sainte-Catherine O, Montréal.'
-        : 'View the full halal butcher price list: beef, veal, lamb, goat, and fresh poultry cut daily at 1234 Rue Sainte-Catherine O, Montreal.';
+        ? 'Consultez la liste de prix complète de notre boucherie Halal Zabiha. Bœuf, veau, agneau, chèvre et volaille découpés chaque jour à Montréal.'
+        : 'View the full halal butcher price list: beef, veal, lamb, goat, and fresh poultry cut daily in Montreal.';
     }
 
     // Apply title
@@ -82,7 +82,6 @@ export function SEO({ currentPath }: { currentPath: string }) {
       email: 'info@ysdev.ca',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '1234 Rue Sainte-Catherine O',
         addressLocality: 'Montréal',
         addressCountry: 'CA',
       },
@@ -91,7 +90,7 @@ export function SEO({ currentPath }: { currentPath: string }) {
         latitude: 45.4975,
         longitude: -73.5786,
       },
-      hasMap: 'https://www.google.com/maps/dir/?api=1&destination=1234+Rue+Sainte-Catherine+O,+Montréal,+QC',
+      hasMap: 'https://www.google.com/maps/dir/?api=1&destination=Montréal,+QC',
       openingHoursSpecification: [
         {
           '@type': 'OpeningHoursSpecification',

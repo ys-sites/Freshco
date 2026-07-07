@@ -32,8 +32,8 @@ export function StoreInfo() {
             <MapPin className="w-3.5 h-3.5 md:w-4 md:h-4"/>
           </motion.div>
           <div className="pt-0.5">
-            <div className="text-[12px] md:text-[13px] font-bold text-theme-text mb-0.5">{isFr ? "Montréal" : "Montreal"}</div>
-            <div className="text-[11px] md:text-[12px] text-theme-muted font-medium">1234 Rue Sainte-Catherine O, Montréal</div>
+            <div className="text-[12px] md:text-[13px] font-bold text-theme-text mb-0.5">{isFr ? "Emplacement" : "Location"}</div>
+            <div className="text-[11px] md:text-[12px] text-theme-muted font-medium">{isFr ? "Montréal" : "Montreal"}</div>
           </div>
         </motion.div>
         
@@ -77,7 +77,7 @@ export function StoreInfo() {
       
       {/* Button */}
       <motion.a
-        href="https://www.google.com/maps/dir/?api=1&destination=1234+Rue+Sainte-Catherine+O,+Montréal,+QC+H3G+1P1"
+        href="https://www.google.com/maps/dir/?api=1&destination=Montréal,+QC"
         target="_blank"
         rel="noopener noreferrer"
         className="motion-card w-full mt-3 md:mt-4 bg-transparent border-2 border-theme-border text-theme-text font-bold py-2 md:py-2 px-4 rounded-[10px] text-[12px] md:text-[13px] hover:border-theme-primary hover:text-theme-primary transition-[border-color,color] flex justify-center items-center gap-2"

@@ -56,9 +56,9 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="text-white/90 text-[15px] leading-[1.6]">
                 <span className="text-[#F6A57F] font-bold block mb-1">
-                  {isFr ? "Bientôt au :" : "Coming soon to:"}
+                  {isFr ? "Bientôt à :" : "Coming soon to:"}
                 </span>
-                1234 Rue Sainte-Catherine O<br />Montréal
+                Montréal
               </li>
               <li className="pt-1"><a href="mailto:info@ysdev.ca" className="text-white/90 hover:text-white text-[15px] transition-colors">info@ysdev.ca</a></li>
             </ul>
