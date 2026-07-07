@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Menu, Phone } from 'lucide-react';
+import { Menu, Phone, Store } from 'lucide-react';
 import { useLanguage } from '../lib/LanguageContext';
 
 export function Navbar() {
@@ -23,12 +23,8 @@ export function Navbar() {
 
           <a href="#" className="flex items-center min-w-0">
             <div className="flex items-center gap-1.5 sm:gap-2 font-extrabold tracking-tight text-theme-primary uppercase whitespace-nowrap hover:scale-105 active:scale-95 transition-transform cursor-pointer">
-              <img
-                src="/logo_cropped.png"
-                alt="Marché Freshco Logo"
-                className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 object-contain flex-shrink-0 drop-shadow-sm"
-              />
-              <span className="text-[16px] sm:text-[20px] md:text-[22px] pt-0.5">Marché Freshco</span>
+              <Store className="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 text-theme-primary flex-shrink-0" />
+              <span className="text-[16px] sm:text-[20px] md:text-[22px] pt-0.5">Marché Saveurs</span>
             </div>
           </a>
         </div>
@@ -60,7 +56,7 @@ export function Navbar() {
             </button>
           </div>
 
-          <a href="tel:5145421166" className="hidden sm:flex h-9 w-9 md:h-10 md:w-10 items-center justify-center rounded-full bg-theme-surface text-theme-primary hover:bg-theme-border hover:scale-110 active:scale-95 transition-all">
+          <a href="tel:5145550184" className="hidden sm:flex h-9 w-9 md:h-10 md:w-10 items-center justify-center rounded-full bg-theme-surface text-theme-primary hover:bg-theme-border hover:scale-110 active:scale-95 transition-all">
             <Phone className="h-4 w-4 md:h-5 md:w-5" />
           </a>
         </div>

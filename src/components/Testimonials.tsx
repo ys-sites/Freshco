@@ -8,28 +8,28 @@ export function Testimonials() {
 
   const testimonials = [
     {
-      author: "Amina R.",
+      author: "Amina",
       role: isFr ? "Cliente Locale" : "Local Customer",
-      text: isFr ? "La qualité du bœuf Halal ici est inégalée à Montréal. Je fais 30 minutes de trajet pour avoir leurs coupes fraîches et épices." : "The quality of the Halal beef here is unmatched in Montreal. I travel 30 minutes just to get their fresh cuts and spices.",
+      text: isFr ? "La qualité du bœuf Halal ici est inégalée. Je fais la route pour avoir leurs coupes fraîches et épices." : "The quality of the Halal beef here is unmatched. I make the trip just to get their fresh cuts and spices.",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop",
     },
     {
-      author: "Hassan T.",
+      author: "Hassan",
       role: isFr ? "Acheteur Hebdomadaire" : "Weekly Shopper",
       text: isFr ? "Enfin un endroit où je peux trouver tous mes produits africains de base et des légumes frais. Le personnel est incroyable." : "Finally, a place where I can find all my African grain staples and fresh produce in one stop. The staff is incredible.",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop",
     },
     {
-      author: "Sarah M.",
+      author: "Sarah",
       role: isFr ? "Influenceuse Culinaire" : "Food Blogger",
       text: isFr ? "Je viens ici pour les fruits exotiques. Tout est toujours parfaitement mûr et prêt. Un vrai joyau du quartier." : "I come here for the exotic fruits and the beautiful presentation. Everything is always perfectly ripe and ready.",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
     },
     {
-      author: "Omar D.",
+      author: "Omar",
       role: isFr ? "Chef Cuisinier Local" : "Local Chef",
       text: isFr ? "La boucherie prend les commandes spéciales très au sérieux. Quand mon restaurant a besoin d'une coupe spécifique, c'est prêt." : "The boucherie takes custom orders very seriously. Whenever our restaurant needs a specialized cut of lamb, they have it ready.",
       rating: 5,

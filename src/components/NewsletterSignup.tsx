@@ -16,22 +16,13 @@ export function NewsletterSignup() {
 
     setStatus('loading');
     try {
-      const response = await fetch('https://services.leadconnectorhq.com/hooks/o7aUwpKbtkP4AOP0pEjC/webhook-trigger/b0e56c9d-f3de-436e-aff0-9055faeb0295', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email }),
-      });
+      // Simulate network request to mock backend
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      console.log(`Mock newsletter signup for: ${email}`);
 
-      if (response.ok) {
-        setStatus('success');
-        setEmail('');
-        setTimeout(() => setStatus('idle'), 5000);
-      } else {
-        setStatus('error');
-        setTimeout(() => setStatus('idle'), 5000);
-      }
+      setStatus('success');
+      setEmail('');
+      setTimeout(() => setStatus('idle'), 5000);
     } catch (error) {
       console.error('Webhook error:', error);
       setStatus('error');
@@ -91,11 +82,17 @@ export function NewsletterSignup() {
             </div>
             
             <button 
-              type="button"
-              disabled={true}
-              className="w-full h-[42px] md:h-[48px] bg-theme-accent/60 text-[#1A1A1A] font-bold text-[13px] md:text-[14px] rounded-[10px] flex items-center justify-center gap-1.5 transition-colors shadow-sm cursor-not-allowed"
+              type="submit"
+              disabled={status === 'loading' || status === 'success'}
+              className="w-full h-[42px] md:h-[48px] bg-theme-accent hover:bg-theme-accent/90 text-[#1A1A1A] font-bold text-[13px] md:text-[14px] rounded-[10px] flex items-center justify-center gap-1.5 transition-colors shadow-sm disabled:opacity-50"
             >
-              {isFr ? "Bientôt intégré" : "Soon to be integrated"}
+              {status === 'loading' ? (
+                <Loader2 className="w-4 h-4 animate-spin text-[#1A1A1A]" />
+              ) : status === 'success' ? (
+                isFr ? 'Abonné !' : 'Subscribed!'
+              ) : (
+                isFr ? "S'abonner" : 'Subscribe'
+              )}
             </button>
             <p className="text-center text-[9px] md:text-[10px] text-white/50 mt-0 md:mt-0.5 uppercase tracking-wider font-medium">
               {isFr ? "Pas de spam. Promis." : "No spam. We promise."}

@@ -25,20 +25,20 @@ export function SEO({ currentPath }: { currentPath: string }) {
 
     // ─── 2. Title & description (bilingual + per-route) ──────────────────
     let title = isFr
-      ? 'Marché Freshco | Épicerie Halal & Produits Multiculturels Montréal'
-      : 'Marché Freshco | Halal Grocery & Multicultural Products Montreal';
+      ? 'Marché Saveurs | Épicerie Halal & Produits Multiculturels Montréal'
+      : 'Marché Saveurs | Halal Grocery & Multicultural Products Montreal';
 
     let description = isFr
-      ? `Marché Freshco à Pierrefonds, Montréal : boucherie 100% Halal Zabiha, viandes fraîches, fruits exotiques, épices africaines et produits d'Asie du Sud. Ouvert 7j/7, 8h–21h.`
-      : 'Marché Freshco in Pierrefonds, Montreal: 100% Zabiha Halal butcher, fresh meats & exotic produce, African staples, South Asian spices. Open 7 days, 8 AM–9 PM.';
+      ? `Marché Saveurs à Montréal : boucherie 100% Halal Zabiha, viandes fraîches, fruits exotiques, épices africaines et produits d'Asie du Sud. Ouvert 7j/7, 8h–21h.`
+      : 'Marché Saveurs in Montreal: 100% Zabiha Halal butcher, fresh meats & exotic produce, African staples, South Asian spices. Open 7 days, 8 AM–9 PM.';
 
     if (isBoucheriePage) {
       title = isFr
-        ? 'Prix Boucherie Halal | Marché Freshco Montréal'
-        : 'Halal Butcher Prices | Marché Freshco Montreal';
+        ? 'Prix Boucherie Halal | Marché Saveurs Montréal'
+        : 'Halal Butcher Prices | Marché Saveurs Montreal';
       description = isFr
-        ? 'Consultez la liste de prix complète de notre boucherie Halal Zabiha. Bœuf, veau, agneau, chèvre et volaille découpés chaque jour au 9549 Boul Gouin O, Pierrefonds.'
-        : 'View the full halal butcher price list: beef, veal, lamb, goat, and fresh poultry cut daily at 9549 Boul Gouin O, Pierrefonds, Montreal.';
+        ? 'Consultez la liste de prix complète de notre boucherie Halal Zabiha. Bœuf, veau, agneau, chèvre et volaille découpés chaque jour au 1234 Rue Sainte-Catherine O, Montréal.'
+        : 'View the full halal butcher price list: beef, veal, lamb, goat, and fresh poultry cut daily at 1234 Rue Sainte-Catherine O, Montreal.';
     }
 
     // Apply title
@@ -59,41 +59,41 @@ export function SEO({ currentPath }: { currentPath: string }) {
     // Canonical
     const canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) {
-      canonical.setAttribute('href', `https://marchefreshco.com${currentPath}`);
+      canonical.setAttribute('href', `https://demo.ysdev.ca${currentPath}`);
     }
 
     // ─── 3. Enhanced LocalBusiness + AggregateRating JSON-LD ─────────────
     const localBusinessSchema = {
       '@context': 'https://schema.org',
       '@type': ['GroceryStore', 'LocalBusiness'],
-      '@id': 'https://marchefreshco.com/#organization',
-      name: 'Marché Freshco',
-      alternateName: ['Marche Freshco', 'Freshco Pierrefonds'],
+      '@id': 'https://demo.ysdev.ca/#organization',
+      name: 'Marché Saveurs',
+      alternateName: ['Marche Saveurs', 'Saveurs Montreal'],
       description: isFr
-        ? `Épicerie multiculturelle Halal à Pierrefonds, Montréal. Boucherie 100% Zabiha, fruits exotiques, épices africaines et produits d'Asie du Sud.`
-        : 'Multicultural Halal grocery in Pierrefonds, Montreal. 100% Zabiha butcher, exotic produce, African staples, and South Asian spices.',
-      url: 'https://marchefreshco.com',
-      logo: 'https://marchefreshco.com/logo_cropped.png',
+        ? `Épicerie multiculturelle Halal à Montréal. Boucherie 100% Zabiha, fruits exotiques, épices africaines et produits d'Asie du Sud.`
+        : 'Multicultural Halal grocery in Montreal. 100% Zabiha butcher, exotic produce, African staples, and South Asian spices.',
+      url: 'https://demo.ysdev.ca',
+      logo: 'https://demo.ysdev.ca/logo_cropped.png',
       image: [
-        'https://marchefreshco.com/thumbnail.jpg',
-        'https://marchefreshco.com/halal.jpg',
+        'https://demo.ysdev.ca/thumbnail.jpg',
+        'https://demo.ysdev.ca/halal.jpg',
       ],
-      telephone: '+15145421166',
-      email: 'Marchefreshco@gmail.com',
+      telephone: '+15145550184',
+      email: 'info@ysdev.ca',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '9549 Boul Gouin O',
-        addressLocality: 'Pierrefonds',
+        streetAddress: '1234 Rue Sainte-Catherine O',
+        addressLocality: 'Montréal',
         addressRegion: 'QC',
-        postalCode: 'H8Y 1R2',
+        postalCode: 'H3G 1P1',
         addressCountry: 'CA',
       },
       geo: {
         '@type': 'GeoCoordinates',
-        latitude: 45.4988,
-        longitude: -73.8441,
+        latitude: 45.4975,
+        longitude: -73.5786,
       },
-      hasMap: 'https://www.google.com/maps/dir/?api=1&destination=9549+Boul+Gouin+O,+Pierrefonds,+QC+H8Y+1R2',
+      hasMap: 'https://www.google.com/maps/dir/?api=1&destination=1234+Rue+Sainte-Catherine+O,+Montréal,+QC',
       openingHoursSpecification: [
         {
           '@type': 'OpeningHoursSpecification',
@@ -106,10 +106,7 @@ export function SEO({ currentPath }: { currentPath: string }) {
       currenciesAccepted: 'CAD',
       priceRange: '$$',
       servesCuisine: ['Halal', 'African', 'South Asian', 'Middle Eastern', 'Caribbean'],
-      sameAs: [
-        'https://www.instagram.com/marche_freshco/',
-        'https://www.facebook.com/profile.php?id=61576117831213',
-      ],
+      sameAs: [],
       // AggregateRating from testimonials (4 verified 5-star reviews)
       aggregateRating: {
         '@type': 'AggregateRating',
@@ -122,15 +119,15 @@ export function SEO({ currentPath }: { currentPath: string }) {
       review: [
         {
           '@type': 'Review',
-          author: { '@type': 'Person', name: 'Amina R.' },
+          author: { '@type': 'Person', name: 'Amina' },
           reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
           reviewBody: isFr
-            ? 'La qualité du bœuf Halal ici est inégalée à Montréal. Je fais 30 minutes de trajet pour avoir leurs coupes fraîches et épices.'
-            : 'The quality of the Halal beef here is unmatched in Montreal. I travel 30 minutes just to get their fresh cuts and spices.',
+            ? 'La qualité du bœuf Halal ici est inégalée. Je fais la route pour avoir leurs coupes fraîches et épices.'
+            : 'The quality of the Halal beef here is unmatched. I make the trip just to get their fresh cuts and spices.',
         },
         {
           '@type': 'Review',
-          author: { '@type': 'Person', name: 'Hassan T.' },
+          author: { '@type': 'Person', name: 'Hassan' },
           reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
           reviewBody: isFr
             ? 'Enfin un endroit où je peux trouver tous mes produits africains de base et des légumes frais.'
@@ -138,7 +135,7 @@ export function SEO({ currentPath }: { currentPath: string }) {
         },
         {
           '@type': 'Review',
-          author: { '@type': 'Person', name: 'Sarah M.' },
+          author: { '@type': 'Person', name: 'Sarah' },
           reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
           reviewBody: isFr
             ? 'Je viens ici pour les fruits exotiques. Tout est toujours parfaitement mûr et prêt.'
@@ -146,7 +143,7 @@ export function SEO({ currentPath }: { currentPath: string }) {
         },
         {
           '@type': 'Review',
-          author: { '@type': 'Person', name: 'Omar D.' },
+          author: { '@type': 'Person', name: 'Omar' },
           reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
           reviewBody: isFr
             ? 'La boucherie prend les commandes spéciales très au sérieux.'
@@ -156,11 +153,11 @@ export function SEO({ currentPath }: { currentPath: string }) {
       department: [
         {
           '@type': 'ButcherShop',
-          name: isFr ? 'Boucherie Halal Marché Freshco' : 'Marché Freshco Halal Butcher',
+          name: isFr ? 'Boucherie Halal Marché Saveurs' : 'Marché Saveurs Halal Butcher',
           description: isFr
             ? 'Boucherie 100% Halal Zabiha. Bœuf, veau, agneau, chèvre et volaille découpés sur place chaque jour. Commandes personnalisées acceptées.'
             : '100% Zabiha Halal butcher. Beef, veal, lamb, goat, and poultry cut in-house daily. Custom orders accepted.',
-          telephone: '+15145421166',
+          telephone: '+15145550184',
         },
       ],
     };
@@ -171,11 +168,11 @@ export function SEO({ currentPath }: { currentPath: string }) {
       '@type': 'BreadcrumbList',
       itemListElement: isBoucheriePage
         ? [
-            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://marchefreshco.com/' },
-            { '@type': 'ListItem', position: 2, name: isFr ? 'Boucherie Halal' : 'Halal Butcher Prices', item: 'https://marchefreshco.com/boucherie-prix' },
+            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://demo.ysdev.ca/' },
+            { '@type': 'ListItem', position: 2, name: isFr ? 'Boucherie Halal' : 'Halal Butcher Prices', item: 'https://demo.ysdev.ca/boucherie-prix' },
           ]
         : [
-            { '@type': 'ListItem', position: 1, name: 'Marché Freshco', item: 'https://marchefreshco.com/' },
+            { '@type': 'ListItem', position: 1, name: 'Marché Saveurs', item: 'https://demo.ysdev.ca/' },
           ],
     };
 
@@ -183,7 +180,7 @@ export function SEO({ currentPath }: { currentPath: string }) {
     const speakableSchema = {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
-      '@id': `https://marchefreshco.com${currentPath}`,
+      '@id': `https://demo.ysdev.ca${currentPath}`,
       name: title,
       description,
       speakable: {
@@ -198,14 +195,14 @@ export function SEO({ currentPath }: { currentPath: string }) {
     const itemListSchema = {
       '@context': 'https://schema.org',
       '@type': 'ItemList',
-      name: isFr ? 'Rayons et Produits — Marché Freshco' : 'Departments & Products — Marché Freshco',
+      name: isFr ? 'Rayons et Produits — Marché Saveurs' : 'Departments & Products — Marché Saveurs',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: isFr ? 'Boucherie Halal' : 'Halal Butcher', url: 'https://marchefreshco.com/#halal' },
-        { '@type': 'ListItem', position: 2, name: isFr ? 'Fruits & Légumes Exotiques' : 'Exotic Fruits & Vegetables', url: 'https://marchefreshco.com/#produce' },
-        { '@type': 'ListItem', position: 3, name: isFr ? 'Spécialités Africaines' : 'African Specialties', url: 'https://marchefreshco.com/#world' },
-        { '@type': 'ListItem', position: 4, name: isFr ? `Saveurs d'Asie du Sud` : 'South Asian Flavors', url: 'https://marchefreshco.com/#world' },
-        { '@type': 'ListItem', position: 5, name: isFr ? 'Produits du Moyen-Orient' : 'Middle Eastern Goods', url: 'https://marchefreshco.com/#world' },
-        { '@type': 'ListItem', position: 6, name: isFr ? 'Nos Arrivages / Circulaire' : 'Weekly Deals / Flyer', url: 'https://marchefreshco.com/#deals' },
+        { '@type': 'ListItem', position: 1, name: isFr ? 'Boucherie Halal' : 'Halal Butcher', url: 'https://demo.ysdev.ca/#halal' },
+        { '@type': 'ListItem', position: 2, name: isFr ? 'Fruits & Légumes Exotiques' : 'Exotic Fruits & Vegetables', url: 'https://demo.ysdev.ca/#produce' },
+        { '@type': 'ListItem', position: 3, name: isFr ? 'Spécialités Africaines' : 'African Specialties', url: 'https://demo.ysdev.ca/#world' },
+        { '@type': 'ListItem', position: 4, name: isFr ? `Saveurs d'Asie du Sud` : 'South Asian Flavors', url: 'https://demo.ysdev.ca/#world' },
+        { '@type': 'ListItem', position: 5, name: isFr ? 'Produits du Moyen-Orient' : 'Middle Eastern Goods', url: 'https://demo.ysdev.ca/#world' },
+        { '@type': 'ListItem', position: 6, name: isFr ? 'Nos Arrivages / Circulaire' : 'Weekly Deals / Flyer', url: 'https://demo.ysdev.ca/#deals' },
       ],
     };
 

@@ -1,4 +1,4 @@
-import { Play, Instagram } from 'lucide-react';
+import { Play } from 'lucide-react';
 import { useLanguage } from '../lib/LanguageContext';
 import React, { useState, useRef } from 'react';
 
@@ -40,8 +40,8 @@ export function AboutSnippet() {
          </h2>
          <p className="text-white/90 text-base md:text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
            {isFr 
-             ? "Marché Freshco a été fondé pour offrir à la diaspora montréalaise une destination unique et de confiance pour des viandes Halal de première qualité, des produits biologiques frais et des ingrédients rares d'Asie du Sud et d'Afrique."
-             : "Marché Freshco was founded to provide the Montreal diaspora with a single, trusted destination for premium Halal meats, fresh organic produce, and hard-to-find ingredients from South Asia and Africa."}
+             ? "Marché Saveurs a été fondé pour offrir à la diaspora montréalaise une destination unique et de confiance pour des viandes Halal de première qualité, des produits biologiques frais et des ingrédients rares d'Asie du Sud et d'Afrique."
+             : "Marché Saveurs was founded to provide the Montreal diaspora with a single, trusted destination for premium Halal meats, fresh organic produce, and hard-to-find ingredients from South Asia and Africa."}
          </p>
 
        </div>
@@ -70,7 +70,7 @@ export function AboutSnippet() {
              <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/70 pointer-events-none"></div>
 
              <div className="absolute top-4 left-4 rounded-full bg-theme-surface text-theme-primary shadow-lg border border-theme-border/50 pointer-events-none p-2.5 flex items-center justify-center">
-               <Instagram className="w-5 h-5" />
+               
              </div>
 
              <div 
@@ -81,7 +81,7 @@ export function AboutSnippet() {
 
              <div className="absolute bottom-6 left-0 right-0 text-center px-4 pointer-events-none">
                 <span className="text-white font-bold text-[18px] md:text-[20px] tracking-wide uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-                  MÁRCHE FRESHCO
+                  MARCHÉ SAVEURS
                 </span>
              </div>
            </div>

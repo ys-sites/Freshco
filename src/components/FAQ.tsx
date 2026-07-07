@@ -15,62 +15,62 @@ export function FAQ() {
   const faqs: FAQItem[] = isFr
     ? [
         {
-          question: "Où est situé Marché Freshco ?",
-          answer: "Marché Freshco est situé au 9549 Boulevard Gouin Ouest, Pierrefonds, Québec, H8Y 1R2. Nous sommes facilement accessibles en voiture et en transport en commun dans l'ouest de Montréal.",
+          question: "Où est situé Marché Saveurs ?",
+          answer: "Marché Saveurs est situé au 1234 Rue Sainte-Catherine Ouest, Montréal, Québec, H3G 1P1. Nous sommes facilement accessibles en voiture et en transport en commun au centre-ville de Montréal.",
         },
         {
-          question: "Quels sont les horaires d'ouverture de Marché Freshco ?",
-          answer: "Marché Freshco est ouvert 7 jours sur 7, de 08h00 à 21h00. Vous pouvez nous joindre par téléphone au (514) 542-1166.",
+          question: "Quels sont les horaires d'ouverture de Marché Saveurs ?",
+          answer: "Marché Saveurs est ouvert 7 jours sur 7, de 08h00 à 21h00. Vous pouvez nous joindre par téléphone au (514) 555-0184.",
         },
         {
-          question: "La viande vendue chez Marché Freshco est-elle 100% Halal ?",
+          question: "La viande vendue chez Marché Saveurs est-elle 100% Halal ?",
           answer: "Oui, toutes nos viandes sont 100% Halal Zabiha. Nous respectons des normes strictes d'abattage islamique pour le bœuf, le veau, l'agneau, la chèvre et la volaille. Des coupes personnalisées sont disponibles sur demande.",
         },
         {
-          question: "Quels types de produits trouve-t-on à Marché Freshco ?",
-          answer: "Marché Freshco propose une large variété de produits : viandes halal fraîches, fruits et légumes exotiques (plantains, mangues, okra, aubergines asiatiques), épices importées, produits africains (manioc, foufou, huile de palme), spécialités sud-asiatiques (riz basmati, dhal, ghee), produits du Moyen-Orient (dattes, tahini, olives), et bien plus encore.",
+          question: "Quels types de produits trouve-t-on à Marché Saveurs ?",
+          answer: "Marché Saveurs propose une large variété de produits : viandes halal fraîches, fruits et légumes exotiques (plantains, mangues, okra, aubergines asiatiques), épices importées, produits africains (manioc, foufou, huile de palme), spécialités sud-asiatiques (riz basmati, dhal, ghee), produits du Moyen-Orient (dattes, tahini, olives), et bien plus encore.",
         },
         {
-          question: "Marché Freshco propose-t-il des commandes de boucherie personnalisées ?",
-          answer: "Oui ! Notre boucherie halal accepte des commandes personnalisées pour des coupes spécifiques d'agneau, de bœuf ou de volaille. Contactez-nous au (514) 542-1166 pour planifier votre commande.",
+          question: "Marché Saveurs propose-t-il des commandes de boucherie personnalisées ?",
+          answer: "Oui ! Notre boucherie halal accepte des commandes personnalisées pour des coupes spécifiques d'agneau, de bœuf ou de volaille. Contactez-nous au (514) 555-0184 pour planifier votre commande.",
         },
         {
-          question: "Comment contacter Marché Freshco ?",
-          answer: "Vous pouvez nous joindre par téléphone au (514) 542-1166, par courriel à Marchefreshco@gmail.com, ou nous suivre sur Instagram @marche_freshco et Facebook (Marché Freshco).",
+          question: "Comment contacter Marché Saveurs ?",
+          answer: "Vous pouvez nous joindre par téléphone au (514) 555-0184 ou par courriel à info@ysdev.ca.",
         },
         {
-          question: "Y a-t-il des promotions ou spéciaux de la semaine chez Marché Freshco ?",
-          answer: "Oui, Marché Freshco publie chaque semaine un circulaire avec des promotions spéciales sur les fruits, légumes, et produits d'épicerie. Consultez notre section « Nos Arrivages / Circulaire » sur ce site ou suivez-nous sur nos réseaux sociaux pour rester informé.",
+          question: "Y a-t-il des promotions ou spéciaux de la semaine chez Marché Saveurs ?",
+          answer: "Oui, Marché Saveurs publie chaque semaine un circulaire avec des promotions spéciales sur les fruits, légumes, et produits d'épicerie. Consultez notre section « Nos Arrivages / Circulaire » sur ce site pour rester informé.",
         },
       ]
     : [
         {
-          question: "Where is Marché Freshco located?",
-          answer: "Marché Freshco is located at 9549 Boulevard Gouin Ouest, Pierrefonds, Quebec, H8Y 1R2. We are conveniently accessible by car and public transit in the west end of Montreal.",
+          question: "Where is Marché Saveurs located?",
+          answer: "Marché Saveurs is located at 1234 Rue Sainte-Catherine Ouest, Montreal, Quebec, H3G 1P1. We are conveniently accessible by car and public transit in downtown Montreal.",
         },
         {
-          question: "What are the hours of operation at Marché Freshco?",
-          answer: "Marché Freshco is open 7 days a week from 8:00 AM to 9:00 PM. You can reach us by phone at (514) 542-1166.",
+          question: "What are the hours of operation at Marché Saveurs?",
+          answer: "Marché Saveurs is open 7 days a week from 8:00 AM to 9:00 PM. You can reach us by phone at (514) 555-0184.",
         },
         {
-          question: "Is the meat at Marché Freshco 100% Halal?",
+          question: "Is the meat at Marché Saveurs 100% Halal?",
           answer: "Yes, all our meat is 100% Zabiha Halal. We uphold strict Islamic slaughter standards for beef, veal, lamb, goat, and poultry. Custom cuts are available on request.",
         },
         {
-          question: "What types of products does Marché Freshco carry?",
-          answer: "Marché Freshco carries a wide variety of products including: fresh halal meats, exotic fruits and vegetables (plantains, mangoes, okra, Asian eggplants), imported spices, African staples (cassava, fufu, palm oil), South Asian specialties (basmati rice, dhal, ghee), Middle Eastern goods (dates, tahini, olives), and much more.",
+          question: "What types of products does Marché Saveurs carry?",
+          answer: "Marché Saveurs carries a wide variety of products including: fresh halal meats, exotic fruits and vegetables (plantains, mangoes, okra, Asian eggplants), imported spices, African staples (cassava, fufu, palm oil), South Asian specialties (basmati rice, dhal, ghee), Middle Eastern goods (dates, tahini, olives), and much more.",
         },
         {
-          question: "Does Marché Freshco offer custom butcher orders?",
-          answer: "Yes! Our halal butcher accepts custom orders for specific cuts of lamb, beef, or poultry. Contact us at (514) 542-1166 to arrange your custom order.",
+          question: "Does Marché Saveurs offer custom butcher orders?",
+          answer: "Yes! Our halal butcher accepts custom orders for specific cuts of lamb, beef, or poultry. Contact us at (514) 555-0184 to arrange your custom order.",
         },
         {
-          question: "How can I contact Marché Freshco?",
-          answer: "You can reach us by phone at (514) 542-1166, by email at Marchefreshco@gmail.com, or follow us on Instagram @marche_freshco and on Facebook (Marché Freshco).",
+          question: "How can I contact Marché Saveurs?",
+          answer: "You can reach us by phone at (514) 555-0184 or by email at info@ysdev.ca.",
         },
         {
-          question: "Does Marché Freshco have weekly deals or a flyer?",
-          answer: "Yes, Marché Freshco publishes weekly specials and promotions on fruits, vegetables, and grocery products. Check our 'Weekly Deals / Flyer' section on this page or follow us on social media to stay updated.",
+          question: "Does Marché Saveurs have weekly deals or a flyer?",
+          answer: "Yes, Marché Saveurs publishes weekly specials and promotions on fruits, vegetables, and grocery products. Check our 'Weekly Deals / Flyer' section on this page to stay updated.",
         },
       ];
 
