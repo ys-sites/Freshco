@@ -84,8 +84,6 @@ export function SEO({ currentPath }: { currentPath: string }) {
         '@type': 'PostalAddress',
         streetAddress: '1234 Rue Sainte-Catherine O',
         addressLocality: 'Montréal',
-        addressRegion: 'QC',
-        postalCode: 'H3G 1P1',
         addressCountry: 'CA',
       },
       geo: {

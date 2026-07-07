@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Menu, Phone, Store } from 'lucide-react';
+import { Menu, Phone } from 'lucide-react';
 import { useLanguage } from '../lib/LanguageContext';
 
 export function Navbar() {
@@ -23,7 +23,11 @@ export function Navbar() {
 
           <a href="#" className="flex items-center min-w-0">
             <div className="flex items-center gap-1.5 sm:gap-2 font-extrabold tracking-tight text-theme-primary uppercase whitespace-nowrap hover:scale-105 active:scale-95 transition-transform cursor-pointer">
-              <Store className="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 text-theme-primary flex-shrink-0" />
+              <img
+                src="/logo_cropped.png"
+                alt="Marché Saveurs Logo"
+                className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 object-contain flex-shrink-0 drop-shadow-sm"
+              />
               <span className="text-[16px] sm:text-[20px] md:text-[22px] pt-0.5">Marché Saveurs</span>
             </div>
           </a>

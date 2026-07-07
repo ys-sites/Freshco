@@ -1,6 +1,6 @@
 import { useLanguage } from '../lib/LanguageContext';
 import { motion } from 'motion/react';
-import { ArrowLeft, Store } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 
 const categories = [
   {
@@ -84,7 +84,7 @@ export default function BoucheriePricesPage() {
             <span className="font-bold hidden sm:block uppercase tracking-wide text-sm">{isFr ? 'Retour à l\'accueil' : 'Back to Home'}</span>
           </a>
           <div className="flex items-center gap-2 sm:gap-3 text-[22px] sm:text-2xl font-extrabold tracking-tight text-theme-primary uppercase whitespace-nowrap">
-            <Store className="w-8 h-8 md:w-10 md:h-10 text-theme-primary flex-shrink-0" />
+            <img src="/logo_cropped.png" alt="Marché Saveurs Logo" className="w-10 h-10 md:w-14 md:h-14 object-contain flex-shrink-0 drop-shadow-sm" />
             <span className="pt-1">Marché Saveurs</span>
           </div>
           <div className="flex items-center gap-2 text-[15px] font-bold">

@@ -32,8 +32,8 @@ export function StoreInfo() {
             <MapPin className="w-3.5 h-3.5 md:w-4 md:h-4"/>
           </motion.div>
           <div className="pt-0.5">
-            <div className="text-[12px] md:text-[13px] font-bold text-theme-text mb-0.5">{isFr ? "Montréal, Québec" : "Montreal, Quebec"}</div>
-            <div className="text-[11px] md:text-[12px] text-theme-muted font-medium">1234 Rue Sainte-Catherine O, QC H3G 1P1</div>
+            <div className="text-[12px] md:text-[13px] font-bold text-theme-text mb-0.5">{isFr ? "Montréal" : "Montreal"}</div>
+            <div className="text-[11px] md:text-[12px] text-theme-muted font-medium">1234 Rue Sainte-Catherine O, Montréal</div>
           </div>
         </motion.div>
         

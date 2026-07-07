@@ -1,5 +1,4 @@
 import { useLanguage } from '../lib/LanguageContext';
-import { Store } from 'lucide-react';
 
 export function Footer() {
   const { lang } = useLanguage();
@@ -28,7 +27,7 @@ export function Footer() {
           {/* Left Column: Brand Bio */}
           <div className="flex flex-col gap-6 pr-0 lg:pr-12">
             <div className="flex items-center gap-3 text-2xl font-extrabold tracking-tight text-white mb-4 hover:scale-105 active:scale-95 transition-transform cursor-pointer w-fit">
-              <Store className="w-[36px] h-[36px] md:w-[44px] md:h-[44px] text-white flex-shrink-0 drop-shadow-lg" />
+              <img src="/logo_cropped.png" alt="Marché Saveurs Logo" className="w-[44px] h-[44px] md:w-[50px] md:h-[50px] object-contain flex-shrink-0 drop-shadow-lg" />
               <span className="font-serif text-[26px] pt-1">Marché Saveurs</span>
             </div>
             
@@ -59,7 +58,7 @@ export function Footer() {
                 <span className="text-[#F6A57F] font-bold block mb-1">
                   {isFr ? "Bientôt au :" : "Coming soon to:"}
                 </span>
-                1234 Rue Sainte-Catherine O<br />Montréal, QC H3G 1P1
+                1234 Rue Sainte-Catherine O<br />Montréal
               </li>
               <li className="pt-1"><a href="mailto:info@ysdev.ca" className="text-white/90 hover:text-white text-[15px] transition-colors">info@ysdev.ca</a></li>
             </ul>
